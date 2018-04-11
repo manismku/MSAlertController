@@ -1,0 +1,267 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AnimationBlock"
+- "MSAlertControllerStyle"
+- "Constants"
+- "Appearance"
+provides-nominal:
+- "17MSAlertController0aB5StyleO"
+- "17MSAlertController9ConstantsV"
+- "17MSAlertController9ConstantsV6DeviceV"
+- "17MSAlertController9ConstantsV6LayoutV"
+- "17MSAlertController9ConstantsV9ViewAlphaV"
+- "17MSAlertController10AppearanceV"
+provides-member:
+- ["17MSAlertController0aB5StyleO", ""]
+- ["17MSAlertController9ConstantsV", ""]
+- ["17MSAlertController9ConstantsV6DeviceV", ""]
+- ["17MSAlertController9ConstantsV6LayoutV", ""]
+- ["17MSAlertController9ConstantsV9ViewAlphaV", ""]
+- ["17MSAlertController10AppearanceV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "+"
+- "-"
+- !private "/"
+- "=="
+- "AnimationBlock"
+- "Appearance"
+- "AssignmentPrecedence"
+- "CGFloat"
+- "Constants"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "MSAlertControllerStyle"
+- !private "StringLiteralType"
+- "UIColor"
+- "UIFont"
+- !private "UIScreen"
+- "Void"
+- !private "max"
+- !private "min"
+depends-member:
+- ["17MSAlertController10AppearanceV", "CGFloat"]
+- ["17MSAlertController10AppearanceV", "UIColor"]
+- ["17MSAlertController10AppearanceV", "UIFont"]
+- ["17MSAlertController10AppearanceV", "bgColor"]
+- ["17MSAlertController10AppearanceV", "bodyFont"]
+- ["17MSAlertController10AppearanceV", "bodyTextColor"]
+- ["17MSAlertController10AppearanceV", "headerBgColor"]
+- ["17MSAlertController10AppearanceV", "init"]
+- ["17MSAlertController10AppearanceV", "sideViewBgColor"]
+- ["17MSAlertController10AppearanceV", "titleColor"]
+- ["17MSAlertController10AppearanceV", "titleFont"]
+- ["17MSAlertController10AppearanceV", "windowHeight"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["SC6CGRectV", "size"]
+- !private ["SC6CGSizeV", "height"]
+- !private ["SC6CGSizeV", "width"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
+- ["17MSAlertController9ConstantsV", "CGFloat"]
+- ["17MSAlertController9ConstantsV", "Device"]
+- ["17MSAlertController9ConstantsV", "Layout"]
+- !private ["17MSAlertController9ConstantsV", "UIScreen"]
+- ["17MSAlertController9ConstantsV", "ViewAlpha"]
+- ["17MSAlertController9ConstantsV", "init"]
+- !private ["17MSAlertController9ConstantsV", "max"]
+- !private ["17MSAlertController9ConstantsV", "min"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
+- !private ["s28CustomDebugStringConvertibleP", "width"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "size"]
+- !private ["s29CustomPlaygroundQuickLookableP", "width"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "size"]
+- !private ["s17CustomReflectableP", "width"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s9DecodableP", "height"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "size"]
+- !private ["s9DecodableP", "width"]
+- ["17MSAlertController9ConstantsV6DeviceV", "CGFloat"]
+- ["17MSAlertController9ConstantsV6DeviceV", "DeviceHeight"]
+- ["17MSAlertController9ConstantsV6DeviceV", "DeviceWidth"]
+- !private ["17MSAlertController9ConstantsV6DeviceV", "UIScreen"]
+- ["17MSAlertController9ConstantsV6DeviceV", "init"]
+- !private ["17MSAlertController9ConstantsV6DeviceV", "max"]
+- !private ["17MSAlertController9ConstantsV6DeviceV", "min"]
+- !private ["s9EncodableP", "height"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "size"]
+- !private ["s9EncodableP", "width"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "bounds"]
+- ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "height"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "size"]
+- !private ["s9EquatableP", "width"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "bounds"]
+- ["s8HashableP", "hashValue"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "main"]
+- ["17MSAlertController9ConstantsV6LayoutV", "ActionSheetLinedHeight"]
+- ["17MSAlertController9ConstantsV6LayoutV", "ActionSheetRowHeight"]
+- ["17MSAlertController9ConstantsV6LayoutV", "ActionSheetRowPadding"]
+- ["17MSAlertController9ConstantsV6LayoutV", "ActionSheetTop"]
+- ["17MSAlertController9ConstantsV6LayoutV", "AlertViewHeaderHeight"]
+- ["17MSAlertController9ConstantsV6LayoutV", "AlertViewHeight"]
+- ["17MSAlertController9ConstantsV6LayoutV", "AlertViewMaxLeft"]
+- ["17MSAlertController9ConstantsV6LayoutV", "AlertViewRight"]
+- ["17MSAlertController9ConstantsV6LayoutV", "AlertViewTop"]
+- ["17MSAlertController9ConstantsV6LayoutV", "CGFloat"]
+- ["17MSAlertController9ConstantsV6LayoutV", "CancelButtonBottom"]
+- ["17MSAlertController9ConstantsV6LayoutV", "CancelButtonHeight"]
+- ["17MSAlertController9ConstantsV6LayoutV", "CancelButtonWidth"]
+- ["17MSAlertController9ConstantsV6LayoutV", "SideViewInitialWidth"]
+- ["17MSAlertController9ConstantsV6LayoutV", "SideViewMaxWidth"]
+- ["17MSAlertController9ConstantsV6LayoutV", "Zero"]
+- ["17MSAlertController9ConstantsV6LayoutV", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- ["17MSAlertController0aB5StyleO", "MSAlertControllerStyleDefault"]
+- ["17MSAlertController0aB5StyleO", "MSAlertControllerStyleShowMoreGrid"]
+- ["17MSAlertController0aB5StyleO", "MSAlertControllerStyleShowMoreList"]
+- ["17MSAlertController0aB5StyleO", "MSAlertControllerStyleSlideView"]
+- ["17MSAlertController0aB5StyleO", "__derived_enum_equals"]
+- ["17MSAlertController0aB5StyleO", "deinit"]
+- ["17MSAlertController0aB5StyleO", "hashValue"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So16NSObjectProtocolP", "bounds"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s8SequenceP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So7UIColorC", "init"]
+- !private ["So6UIFontC", "init"]
+- !private ["So8UIScreenC", "bounds"]
+- !private ["So8UIScreenC", "main"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "main"]
+- ["17MSAlertController9ConstantsV9ViewAlphaV", "CGFloat"]
+- ["17MSAlertController9ConstantsV9ViewAlphaV", "init"]
+- ["17MSAlertController9ConstantsV9ViewAlphaV", "line"]
+- ["17MSAlertController9ConstantsV9ViewAlphaV", "max"]
+- ["17MSAlertController9ConstantsV9ViewAlphaV", "min"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
+- !private ["s21_ObjectiveCBridgeableP", "width"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "17MSAlertController10AppearanceV"
+- !private "s23BidirectionalCollectionP"
+- !private "SC6CGRectV"
+- !private "SC6CGSizeV"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "17MSAlertController9ConstantsV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- "17MSAlertController9ConstantsV6DeviceV"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- "17MSAlertController9ConstantsV6LayoutV"
+- !private "s25LosslessStringConvertibleP"
+- "17MSAlertController0aB5StyleO"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s8SequenceP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So7UIColorC"
+- !private "So6UIFontC"
+- !private "So8UIScreenC"
+- !private "So18UITraitEnvironmentP"
+- "17MSAlertController9ConstantsV9ViewAlphaV"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertController.h"
+- "/Users/manishkumar/Documents/CleanSwift/MSAlertController/DerivedData/MSAlertController/Build/Intermediates.noindex/MSAlertController.build/Debug-iphoneos/MSAlertController.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "99b2b1c0dcf4f8239c3d35954a615bbb"

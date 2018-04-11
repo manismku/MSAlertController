@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		792E3249207CFAA30003DF64 /* MSAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E3248207CFAA30003DF64 /* MSAlertController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		792E324A207CFAA30003DF64 /* MSAlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 792E3248207CFAA30003DF64 /* MSAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79F3E5A220468BBC00584160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3E5A120468BBC00584160 /* AppDelegate.swift */; };
+		79F3E5A420468BBC00584160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3E5A320468BBC00584160 /* ViewController.swift */; };
+		79F3E5A720468BBC00584160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F3E5A520468BBC00584160 /* Main.storyboard */; };
+		79F3E5A920468BBC00584160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F3E5A820468BBC00584160 /* Assets.xcassets */; };
+		79F3E5AC20468BBC00584160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F3E5AA20468BBC00584160 /* LaunchScreen.storyboard */; };
+		79F3E5B720468BBC00584160 /* MSAlertControllerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3E5B620468BBC00584160 /* MSAlertControllerExampleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79F3E5B320468BBC00584160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79F3E59620468BBC00584160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79F3E59D20468BBC00584160;
+			remoteInfo = MSAlertControllerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		792E324B207CFAA30003DF64 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				792E324A207CFAA30003DF64 /* MSAlertController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		792E3248207CFAA30003DF64 /* MSAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MSAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F3E59E20468BBC00584160 /* MSAlertControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSAlertControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F3E5A120468BBC00584160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79F3E5A320468BBC00584160 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79F3E5A620468BBC00584160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79F3E5A820468BBC00584160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79F3E5AB20468BBC00584160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79F3E5AD20468BBC00584160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F3E5B220468BBC00584160 /* MSAlertControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSAlertControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F3E5B620468BBC00584160 /* MSAlertControllerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSAlertControllerExampleTests.swift; sourceTree = "<group>"; };
+		79F3E5B820468BBC00584160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F3E5CB20468BF500584160 /* MSAlertController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSAlertController.framework; path = "../DerivedData/MSAlertController/Build/Products/Debug-iphonesimulator/MSAlertController.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79F3E59B20468BBC00584160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792E3249207CFAA30003DF64 /* MSAlertController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79F3E5AF20468BBC00584160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79F3E59520468BBC00584160 = {
+			isa = PBXGroup;
+			children = (
+				792E3248207CFAA30003DF64 /* MSAlertController.framework */,
+				79F3E5A020468BBC00584160 /* MSAlertControllerExample */,
+				79F3E5B520468BBC00584160 /* MSAlertControllerExampleTests */,
+				79F3E59F20468BBC00584160 /* Products */,
+				79F3E5CA20468BF500584160 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79F3E59F20468BBC00584160 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79F3E59E20468BBC00584160 /* MSAlertControllerExample.app */,
+				79F3E5B220468BBC00584160 /* MSAlertControllerExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79F3E5A020468BBC00584160 /* MSAlertControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				79F3E5A120468BBC00584160 /* AppDelegate.swift */,
+				79F3E5A320468BBC00584160 /* ViewController.swift */,
+				79F3E5A520468BBC00584160 /* Main.storyboard */,
+				79F3E5A820468BBC00584160 /* Assets.xcassets */,
+				79F3E5AA20468BBC00584160 /* LaunchScreen.storyboard */,
+				79F3E5AD20468BBC00584160 /* Info.plist */,
+			);
+			path = MSAlertControllerExample;
+			sourceTree = "<group>";
+		};
+		79F3E5B520468BBC00584160 /* MSAlertControllerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				79F3E5B620468BBC00584160 /* MSAlertControllerExampleTests.swift */,
+				79F3E5B820468BBC00584160 /* Info.plist */,
+			);
+			path = MSAlertControllerExampleTests;
+			sourceTree = "<group>";
+		};
+		79F3E5CA20468BF500584160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79F3E5CB20468BF500584160 /* MSAlertController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79F3E59D20468BBC00584160 /* MSAlertControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79F3E5BB20468BBC00584160 /* Build configuration list for PBXNativeTarget "MSAlertControllerExample" */;
+			buildPhases = (
+				79F3E59A20468BBC00584160 /* Sources */,
+				79F3E59B20468BBC00584160 /* Frameworks */,
+				79F3E59C20468BBC00584160 /* Resources */,
+				792E324B207CFAA30003DF64 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSAlertControllerExample;
+			productName = MSAlertControllerExample;
+			productReference = 79F3E59E20468BBC00584160 /* MSAlertControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79F3E5B120468BBC00584160 /* MSAlertControllerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79F3E5BE20468BBC00584160 /* Build configuration list for PBXNativeTarget "MSAlertControllerExampleTests" */;
+			buildPhases = (
+				79F3E5AE20468BBC00584160 /* Sources */,
+				79F3E5AF20468BBC00584160 /* Frameworks */,
+				79F3E5B020468BBC00584160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79F3E5B420468BBC00584160 /* PBXTargetDependency */,
+			);
+			name = MSAlertControllerExampleTests;
+			productName = MSAlertControllerExampleTests;
+			productReference = 79F3E5B220468BBC00584160 /* MSAlertControllerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79F3E59620468BBC00584160 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Manish Kumar";
+				TargetAttributes = {
+					79F3E59D20468BBC00584160 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = AW9D2R4PTF;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+					};
+					79F3E5B120468BBC00584160 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 79F3E59D20468BBC00584160;
+					};
+				};
+			};
+			buildConfigurationList = 79F3E59920468BBC00584160 /* Build configuration list for PBXProject "MSAlertControllerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79F3E59520468BBC00584160;
+			productRefGroup = 79F3E59F20468BBC00584160 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79F3E59D20468BBC00584160 /* MSAlertControllerExample */,
+				79F3E5B120468BBC00584160 /* MSAlertControllerExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79F3E59C20468BBC00584160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79F3E5AC20468BBC00584160 /* LaunchScreen.storyboard in Resources */,
+				79F3E5A920468BBC00584160 /* Assets.xcassets in Resources */,
+				79F3E5A720468BBC00584160 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79F3E5B020468BBC00584160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79F3E59A20468BBC00584160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79F3E5A420468BBC00584160 /* ViewController.swift in Sources */,
+				79F3E5A220468BBC00584160 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79F3E5AE20468BBC00584160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79F3E5B720468BBC00584160 /* MSAlertControllerExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79F3E5B420468BBC00584160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79F3E59D20468BBC00584160 /* MSAlertControllerExample */;
+			targetProxy = 79F3E5B320468BBC00584160 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79F3E5A520468BBC00584160 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79F3E5A620468BBC00584160 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		79F3E5AA20468BBC00584160 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79F3E5AB20468BBC00584160 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79F3E5B920468BBC00584160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79F3E5BA20468BBC00584160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79F3E5BC20468BBC00584160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AW9D2R4PTF;
+				INFOPLIST_FILE = MSAlertControllerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = manismku.MSAlertControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		79F3E5BD20468BBC00584160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AW9D2R4PTF;
+				INFOPLIST_FILE = MSAlertControllerExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = manismku.MSAlertControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		79F3E5BF20468BBC00584160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MSAlertControllerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = manismku.MSAlertControllerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSAlertControllerExample.app/MSAlertControllerExample";
+			};
+			name = Debug;
+		};
+		79F3E5C020468BBC00584160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MSAlertControllerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = manismku.MSAlertControllerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSAlertControllerExample.app/MSAlertControllerExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79F3E59920468BBC00584160 /* Build configuration list for PBXProject "MSAlertControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F3E5B920468BBC00584160 /* Debug */,
+				79F3E5BA20468BBC00584160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79F3E5BB20468BBC00584160 /* Build configuration list for PBXNativeTarget "MSAlertControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F3E5BC20468BBC00584160 /* Debug */,
+				79F3E5BD20468BBC00584160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79F3E5BE20468BBC00584160 /* Build configuration list for PBXNativeTarget "MSAlertControllerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F3E5BF20468BBC00584160 /* Debug */,
+				79F3E5C020468BBC00584160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79F3E59620468BBC00584160 /* Project object */;
+}

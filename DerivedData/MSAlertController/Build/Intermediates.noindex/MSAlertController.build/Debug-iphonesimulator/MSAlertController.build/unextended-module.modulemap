@@ -1,0 +1,10 @@
+framework module MSAlertController {
+  umbrella header "MSAlertController.h"
+
+  export *
+  module * { export * }
+}
+
+module MSAlertController.__Swift {
+    exclude header "MSAlertController-Swift.h"
+}

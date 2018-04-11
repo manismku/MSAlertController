@@ -1,0 +1,16 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "03044d9cbc5739271b31e933c766a9d5"
+build_time: [1523460296, 446767000]
+inputs:
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertController.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/String+Extension.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertAction.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/Extensions.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertPresentationController.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertSideview.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertConstants.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertAnimator.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertView.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/UIPanGestureRecognizer+Extension.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertButton.swift": [9223372036, 854775807]
+  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertActionSheet.swift": [9223372036, 854775807]

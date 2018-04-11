@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/manishkumar/Documents/CleanSwift/MSAlertController/DerivedData/MSAlertController/Build/Products/Debug-iphoneos/MSAlertController.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/manishkumar/Documents/CleanSwift/MSAlertController/DerivedData/MSAlertController/Build/Intermediates.noindex/MSAlertController.build/Debug-iphoneos/MSAlertController.build/unextended-module.modulemap',
+    }]
+  }]
+}

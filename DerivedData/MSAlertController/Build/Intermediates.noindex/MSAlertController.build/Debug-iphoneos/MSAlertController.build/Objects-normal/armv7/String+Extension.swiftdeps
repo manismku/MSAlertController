@@ -1,0 +1,462 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["SS", ""]
+- ["SS", "sizeOfString"]
+- ["SS", "height"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "CFRange"
+- "CGFloat"
+- "CGSize"
+- !private "CTFramesetterCreateWithAttributedString"
+- !private "CTFramesetterSuggestFrameSizeWithConstraints"
+- !private "DBL_MAX"
+- !private "Dictionary"
+- "Double"
+- !private "NSAttributedString"
+- !private "NSAttributedStringKey"
+- "String"
+- "UIFont"
+- !private "ceil"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "CFRange"]
+- !private ["s23BidirectionalCollectionP", "CGSize"]
+- !private ["s23BidirectionalCollectionP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s23BidirectionalCollectionP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s23BidirectionalCollectionP", "DBL_MAX"]
+- !private ["s23BidirectionalCollectionP", "NSAttributedString"]
+- !private ["s23BidirectionalCollectionP", "NSAttributedStringKey"]
+- !private ["s23BidirectionalCollectionP", "boundingRect"]
+- !private ["s23BidirectionalCollectionP", "ceil"]
+- !private ["s19BinaryFloatingPointP", "greatestFiniteMagnitude"]
+- !private ["SC7CFRangeV", "init"]
+- !private ["12CoreGraphics7CGFloatV", "greatestFiniteMagnitude"]
+- !private ["SC6CGRectV", "height"]
+- !private ["SC6CGSizeV", "init"]
+- !private ["s7CVarArgP", "CFRange"]
+- !private ["s7CVarArgP", "CGSize"]
+- !private ["s7CVarArgP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s7CVarArgP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s7CVarArgP", "DBL_MAX"]
+- !private ["s7CVarArgP", "NSAttributedString"]
+- !private ["s7CVarArgP", "NSAttributedStringKey"]
+- !private ["s7CVarArgP", "boundingRect"]
+- !private ["s7CVarArgP", "ceil"]
+- !private ["s7CVarArgP", "greatestFiniteMagnitude"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s10CollectionP", "CFRange"]
+- !private ["s10CollectionP", "CGSize"]
+- !private ["s10CollectionP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s10CollectionP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s10CollectionP", "DBL_MAX"]
+- !private ["s10CollectionP", "NSAttributedString"]
+- !private ["s10CollectionP", "NSAttributedStringKey"]
+- !private ["s10CollectionP", "boundingRect"]
+- !private ["s10CollectionP", "ceil"]
+- !private ["s10ComparableP", "CFRange"]
+- !private ["s10ComparableP", "CGSize"]
+- !private ["s10ComparableP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s10ComparableP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s10ComparableP", "DBL_MAX"]
+- !private ["s10ComparableP", "NSAttributedString"]
+- !private ["s10ComparableP", "NSAttributedStringKey"]
+- !private ["s10ComparableP", "boundingRect"]
+- !private ["s10ComparableP", "ceil"]
+- !private ["s10ComparableP", "greatestFiniteMagnitude"]
+- !private ["s28CustomDebugStringConvertibleP", "CFRange"]
+- !private ["s28CustomDebugStringConvertibleP", "CGSize"]
+- !private ["s28CustomDebugStringConvertibleP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s28CustomDebugStringConvertibleP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s28CustomDebugStringConvertibleP", "DBL_MAX"]
+- !private ["s28CustomDebugStringConvertibleP", "NSAttributedString"]
+- !private ["s28CustomDebugStringConvertibleP", "NSAttributedStringKey"]
+- !private ["s28CustomDebugStringConvertibleP", "boundingRect"]
+- !private ["s28CustomDebugStringConvertibleP", "ceil"]
+- !private ["s28CustomDebugStringConvertibleP", "height"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "CFRange"]
+- !private ["s29CustomPlaygroundQuickLookableP", "CGSize"]
+- !private ["s29CustomPlaygroundQuickLookableP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s29CustomPlaygroundQuickLookableP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s29CustomPlaygroundQuickLookableP", "DBL_MAX"]
+- !private ["s29CustomPlaygroundQuickLookableP", "NSAttributedString"]
+- !private ["s29CustomPlaygroundQuickLookableP", "NSAttributedStringKey"]
+- !private ["s29CustomPlaygroundQuickLookableP", "boundingRect"]
+- !private ["s29CustomPlaygroundQuickLookableP", "ceil"]
+- !private ["s29CustomPlaygroundQuickLookableP", "height"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "CFRange"]
+- !private ["s17CustomReflectableP", "CGSize"]
+- !private ["s17CustomReflectableP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s17CustomReflectableP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s17CustomReflectableP", "DBL_MAX"]
+- !private ["s17CustomReflectableP", "NSAttributedString"]
+- !private ["s17CustomReflectableP", "NSAttributedStringKey"]
+- !private ["s17CustomReflectableP", "boundingRect"]
+- !private ["s17CustomReflectableP", "ceil"]
+- !private ["s17CustomReflectableP", "greatestFiniteMagnitude"]
+- !private ["s17CustomReflectableP", "height"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "CFRange"]
+- !private ["s23CustomStringConvertibleP", "CGSize"]
+- !private ["s23CustomStringConvertibleP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s23CustomStringConvertibleP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s23CustomStringConvertibleP", "DBL_MAX"]
+- !private ["s23CustomStringConvertibleP", "NSAttributedString"]
+- !private ["s23CustomStringConvertibleP", "NSAttributedStringKey"]
+- !private ["s23CustomStringConvertibleP", "boundingRect"]
+- !private ["s23CustomStringConvertibleP", "ceil"]
+- !private ["s23CustomStringConvertibleP", "greatestFiniteMagnitude"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s9DecodableP", "CFRange"]
+- !private ["s9DecodableP", "CGSize"]
+- !private ["s9DecodableP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s9DecodableP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s9DecodableP", "DBL_MAX"]
+- !private ["s9DecodableP", "NSAttributedString"]
+- !private ["s9DecodableP", "NSAttributedStringKey"]
+- !private ["s9DecodableP", "boundingRect"]
+- !private ["s9DecodableP", "ceil"]
+- !private ["s9DecodableP", "greatestFiniteMagnitude"]
+- !private ["s9DecodableP", "height"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "CFRange"]
+- !private ["s9EncodableP", "CGSize"]
+- !private ["s9EncodableP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s9EncodableP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s9EncodableP", "DBL_MAX"]
+- !private ["s9EncodableP", "NSAttributedString"]
+- !private ["s9EncodableP", "NSAttributedStringKey"]
+- !private ["s9EncodableP", "boundingRect"]
+- !private ["s9EncodableP", "ceil"]
+- !private ["s9EncodableP", "greatestFiniteMagnitude"]
+- !private ["s9EncodableP", "height"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "CFRange"]
+- !private ["s9EquatableP", "CGSize"]
+- !private ["s9EquatableP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s9EquatableP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s9EquatableP", "DBL_MAX"]
+- !private ["s9EquatableP", "NSAttributedString"]
+- !private ["s9EquatableP", "NSAttributedStringKey"]
+- !private ["s9EquatableP", "boundingRect"]
+- !private ["s9EquatableP", "ceil"]
+- !private ["s9EquatableP", "font"]
+- !private ["s9EquatableP", "greatestFiniteMagnitude"]
+- !private ["s9EquatableP", "height"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "usesLineFragmentOrigin"]
+- !private ["s25ExpressibleByArrayLiteralP", "usesLineFragmentOrigin"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "CFRange"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "CGSize"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "DBL_MAX"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "NSAttributedString"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "NSAttributedStringKey"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "boundingRect"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "ceil"]
+- !private ["s25ExpressibleByFloatLiteralP", "greatestFiniteMagnitude"]
+- !private ["s27ExpressibleByIntegerLiteralP", "greatestFiniteMagnitude"]
+- !private ["s26ExpressibleByStringLiteralP", "CFRange"]
+- !private ["s26ExpressibleByStringLiteralP", "CGSize"]
+- !private ["s26ExpressibleByStringLiteralP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s26ExpressibleByStringLiteralP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s26ExpressibleByStringLiteralP", "DBL_MAX"]
+- !private ["s26ExpressibleByStringLiteralP", "NSAttributedString"]
+- !private ["s26ExpressibleByStringLiteralP", "NSAttributedStringKey"]
+- !private ["s26ExpressibleByStringLiteralP", "boundingRect"]
+- !private ["s26ExpressibleByStringLiteralP", "ceil"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "CFRange"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "CGSize"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "DBL_MAX"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "NSAttributedString"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "NSAttributedStringKey"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "boundingRect"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "ceil"]
+- !private ["s13FloatingPointP", "greatestFiniteMagnitude"]
+- !private ["s8HashableP", "CFRange"]
+- !private ["s8HashableP", "CGSize"]
+- !private ["s8HashableP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s8HashableP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s8HashableP", "DBL_MAX"]
+- !private ["s8HashableP", "NSAttributedString"]
+- !private ["s8HashableP", "NSAttributedStringKey"]
+- !private ["s8HashableP", "boundingRect"]
+- !private ["s8HashableP", "ceil"]
+- !private ["s8HashableP", "font"]
+- !private ["s8HashableP", "greatestFiniteMagnitude"]
+- !private ["s8HashableP", "init"]
+- !private ["s25LosslessStringConvertibleP", "CFRange"]
+- !private ["s25LosslessStringConvertibleP", "CGSize"]
+- !private ["s25LosslessStringConvertibleP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s25LosslessStringConvertibleP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s25LosslessStringConvertibleP", "DBL_MAX"]
+- !private ["s25LosslessStringConvertibleP", "NSAttributedString"]
+- !private ["s25LosslessStringConvertibleP", "NSAttributedStringKey"]
+- !private ["s25LosslessStringConvertibleP", "boundingRect"]
+- !private ["s25LosslessStringConvertibleP", "ceil"]
+- !private ["s10MirrorPathP", "CFRange"]
+- !private ["s10MirrorPathP", "CGSize"]
+- !private ["s10MirrorPathP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s10MirrorPathP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s10MirrorPathP", "DBL_MAX"]
+- !private ["s10MirrorPathP", "NSAttributedString"]
+- !private ["s10MirrorPathP", "NSAttributedStringKey"]
+- !private ["s10MirrorPathP", "boundingRect"]
+- !private ["s10MirrorPathP", "ceil"]
+- !private ["So18NSAttributedStringC", "init"]
+- !private ["SC21NSAttributedStringKeyV", "font"]
+- !private ["So8NSCodingP", "boundingRect"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "boundingRect"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "boundingRect"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "boundingRect"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "boundingRect"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "boundingRect"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So16NSObjectProtocolP", "boundingRect"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So14NSSecureCodingP", "boundingRect"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "boundingRect"]
+- !private ["SC22NSStringDrawingOptionsV", "usesLineFragmentOrigin"]
+- !private ["s7NumericP", "greatestFiniteMagnitude"]
+- !private ["s9OptionSetP", "usesLineFragmentOrigin"]
+- !private ["s26RangeReplaceableCollectionP", "CFRange"]
+- !private ["s26RangeReplaceableCollectionP", "CGSize"]
+- !private ["s26RangeReplaceableCollectionP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s26RangeReplaceableCollectionP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s26RangeReplaceableCollectionP", "DBL_MAX"]
+- !private ["s26RangeReplaceableCollectionP", "NSAttributedString"]
+- !private ["s26RangeReplaceableCollectionP", "NSAttributedStringKey"]
+- !private ["s26RangeReplaceableCollectionP", "boundingRect"]
+- !private ["s26RangeReplaceableCollectionP", "ceil"]
+- !private ["s16RawRepresentableP", "font"]
+- !private ["s16RawRepresentableP", "usesLineFragmentOrigin"]
+- !private ["s8SequenceP", "CFRange"]
+- !private ["s8SequenceP", "CGSize"]
+- !private ["s8SequenceP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s8SequenceP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s8SequenceP", "DBL_MAX"]
+- !private ["s8SequenceP", "NSAttributedString"]
+- !private ["s8SequenceP", "NSAttributedStringKey"]
+- !private ["s8SequenceP", "boundingRect"]
+- !private ["s8SequenceP", "ceil"]
+- !private ["s10SetAlgebraP", "usesLineFragmentOrigin"]
+- !private ["s13SignedNumericP", "greatestFiniteMagnitude"]
+- !private ["s10StrideableP", "greatestFiniteMagnitude"]
+- !private ["SS", "CFRange"]
+- ["SS", "CGFloat"]
+- ["SS", "CGSize"]
+- !private ["SS", "CTFramesetterCreateWithAttributedString"]
+- !private ["SS", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["SS", "DBL_MAX"]
+- ["SS", "Double"]
+- !private ["SS", "NSAttributedString"]
+- !private ["SS", "NSAttributedStringKey"]
+- ["SS", "String"]
+- ["SS", "UIFont"]
+- !private ["SS", "boundingRect"]
+- !private ["SS", "ceil"]
+- ["SS", "height"]
+- ["SS", "sizeOfString"]
+- !private ["s14StringProtocolP", "CFRange"]
+- !private ["s14StringProtocolP", "CGSize"]
+- !private ["s14StringProtocolP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s14StringProtocolP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s14StringProtocolP", "DBL_MAX"]
+- !private ["s14StringProtocolP", "NSAttributedString"]
+- !private ["s14StringProtocolP", "NSAttributedStringKey"]
+- !private ["s14StringProtocolP", "boundingRect"]
+- !private ["s14StringProtocolP", "ceil"]
+- !private ["s16TextOutputStreamP", "CFRange"]
+- !private ["s16TextOutputStreamP", "CGSize"]
+- !private ["s16TextOutputStreamP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s16TextOutputStreamP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s16TextOutputStreamP", "DBL_MAX"]
+- !private ["s16TextOutputStreamP", "NSAttributedString"]
+- !private ["s16TextOutputStreamP", "NSAttributedStringKey"]
+- !private ["s16TextOutputStreamP", "boundingRect"]
+- !private ["s16TextOutputStreamP", "ceil"]
+- !private ["s20TextOutputStreamableP", "CFRange"]
+- !private ["s20TextOutputStreamableP", "CGSize"]
+- !private ["s20TextOutputStreamableP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s20TextOutputStreamableP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s20TextOutputStreamableP", "DBL_MAX"]
+- !private ["s20TextOutputStreamableP", "NSAttributedString"]
+- !private ["s20TextOutputStreamableP", "NSAttributedStringKey"]
+- !private ["s20TextOutputStreamableP", "boundingRect"]
+- !private ["s20TextOutputStreamableP", "ceil"]
+- !private ["s15_CVarArgAlignedP", "greatestFiniteMagnitude"]
+- !private ["s22_CVarArgPassedAsDoubleP", "greatestFiniteMagnitude"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "CFRange"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "CGSize"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "DBL_MAX"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "NSAttributedString"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "NSAttributedStringKey"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "boundingRect"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "ceil"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "CFRange"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "CGSize"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "DBL_MAX"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "NSAttributedString"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "NSAttributedStringKey"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "boundingRect"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "ceil"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "CFRange"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "CGSize"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "DBL_MAX"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "NSAttributedString"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "NSAttributedStringKey"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "boundingRect"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "ceil"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "CFRange"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "CGSize"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "DBL_MAX"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "NSAttributedString"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "NSAttributedStringKey"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "boundingRect"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "ceil"]
+- !private ["s33_ExpressibleByStringInterpolationP", "CFRange"]
+- !private ["s33_ExpressibleByStringInterpolationP", "CGSize"]
+- !private ["s33_ExpressibleByStringInterpolationP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s33_ExpressibleByStringInterpolationP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s33_ExpressibleByStringInterpolationP", "DBL_MAX"]
+- !private ["s33_ExpressibleByStringInterpolationP", "NSAttributedString"]
+- !private ["s33_ExpressibleByStringInterpolationP", "NSAttributedStringKey"]
+- !private ["s33_ExpressibleByStringInterpolationP", "boundingRect"]
+- !private ["s33_ExpressibleByStringInterpolationP", "ceil"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "boundingRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "boundingRect"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "CFRange"]
+- !private ["s21_ObjectiveCBridgeableP", "CGSize"]
+- !private ["s21_ObjectiveCBridgeableP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s21_ObjectiveCBridgeableP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s21_ObjectiveCBridgeableP", "DBL_MAX"]
+- !private ["s21_ObjectiveCBridgeableP", "NSAttributedString"]
+- !private ["s21_ObjectiveCBridgeableP", "NSAttributedStringKey"]
+- !private ["s21_ObjectiveCBridgeableP", "boundingRect"]
+- !private ["s21_ObjectiveCBridgeableP", "ceil"]
+- !private ["s21_ObjectiveCBridgeableP", "font"]
+- !private ["s21_ObjectiveCBridgeableP", "greatestFiniteMagnitude"]
+- !private ["s21_ObjectiveCBridgeableP", "height"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s20_SwiftNewtypeWrapperP", "font"]
+- !private ["s16_SwiftStringViewP", "CFRange"]
+- !private ["s16_SwiftStringViewP", "CGSize"]
+- !private ["s16_SwiftStringViewP", "CTFramesetterCreateWithAttributedString"]
+- !private ["s16_SwiftStringViewP", "CTFramesetterSuggestFrameSizeWithConstraints"]
+- !private ["s16_SwiftStringViewP", "DBL_MAX"]
+- !private ["s16_SwiftStringViewP", "NSAttributedString"]
+- !private ["s16_SwiftStringViewP", "NSAttributedStringKey"]
+- !private ["s16_SwiftStringViewP", "boundingRect"]
+- !private ["s16_SwiftStringViewP", "ceil"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "SC7CFRangeV"
+- !private "12CoreGraphics7CGFloatV"
+- !private "SC6CGRectV"
+- !private "SC6CGSizeV"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s13FloatingPointP"
+- !private "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So18NSAttributedStringC"
+- !private "SC21NSAttributedStringKeyV"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "SC22NSStringDrawingOptionsV"
+- !private "s7NumericP"
+- !private "s9OptionSetP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "s10SetAlgebraP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertController.h"
+- "/Users/manishkumar/Documents/CleanSwift/MSAlertController/DerivedData/MSAlertController/Build/Intermediates.noindex/MSAlertController.build/Debug-iphoneos/MSAlertController.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "663d1a1d6fc247529c7e950efdc8c348"

@@ -1,0 +1,460 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "State"
+- "ActionSheet"
+- "MSAlertAnimator"
+provides-nominal:
+- "17MSAlertController5StateO"
+- "17MSAlertController11ActionSheetO"
+- "17MSAlertController0A8AnimatorC"
+provides-member:
+- ["17MSAlertController5StateO", ""]
+- ["17MSAlertController11ActionSheetO", ""]
+- ["17MSAlertController0A8AnimatorC", ""]
+- ["17MSAlertController5StateO", "opposite"]
+- ["17MSAlertController11ActionSheetO", "opposite"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "*"
+- !private "+"
+- !private "<"
+- "=="
+- !private ">"
+- "ActionSheet"
+- "AnimationBlock"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "MSAlertAnimator"
+- "State"
+- !private "StringLiteralType"
+- "UIViewPropertyAnimator"
+- !private "log"
+- !private "print"
+depends-member:
+- ["17MSAlertController11ActionSheetO", "ActionSheet"]
+- ["17MSAlertController11ActionSheetO", "__derived_enum_equals"]
+- ["17MSAlertController11ActionSheetO", "closed"]
+- ["17MSAlertController11ActionSheetO", "deinit"]
+- ["17MSAlertController11ActionSheetO", "hashValue"]
+- ["17MSAlertController11ActionSheetO", "open"]
+- ["17MSAlertController11ActionSheetO", "opposite"]
+- !private ["Sa", "append"]
+- !private ["Sa", "enumerated"]
+- !private ["Sa", "forEach"]
+- ["Sa", "init"]
+- !private ["Sa", "isEmpty"]
+- !private ["Sa", "map"]
+- !private ["Sa", "removeAll"]
+- !private ["Sa", "subscript"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "enumerated"]
+- !private ["s23BidirectionalCollectionP", "forEach"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "isEmpty"]
+- !private ["s23BidirectionalCollectionP", "map"]
+- !private ["s23BidirectionalCollectionP", "removeAll"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "addCompletion"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "continueAnimation"]
+- !private ["s7CVarArgP", "enumerated"]
+- !private ["s7CVarArgP", "forEach"]
+- !private ["s7CVarArgP", "fractionComplete"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "isReversed"]
+- !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "pauseAnimation"]
+- !private ["s7CVarArgP", "removeAll"]
+- !private ["s7CVarArgP", "startAnimation"]
+- !private ["s7CVarArgP", "state"]
+- !private ["s7CVarArgP", "stopAnimation"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "enumerated"]
+- !private ["s10CollectionP", "forEach"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "isEmpty"]
+- !private ["s10CollectionP", "map"]
+- !private ["s10CollectionP", "removeAll"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "addCompletion"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "continueAnimation"]
+- !private ["s28CustomDebugStringConvertibleP", "enumerated"]
+- !private ["s28CustomDebugStringConvertibleP", "forEach"]
+- !private ["s28CustomDebugStringConvertibleP", "fractionComplete"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "isReversed"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "pauseAnimation"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
+- !private ["s28CustomDebugStringConvertibleP", "startAnimation"]
+- !private ["s28CustomDebugStringConvertibleP", "state"]
+- !private ["s28CustomDebugStringConvertibleP", "stopAnimation"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "enumerated"]
+- !private ["s17CustomReflectableP", "forEach"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "removeAll"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "addCompletion"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "continueAnimation"]
+- !private ["s23CustomStringConvertibleP", "enumerated"]
+- !private ["s23CustomStringConvertibleP", "forEach"]
+- !private ["s23CustomStringConvertibleP", "fractionComplete"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "isReversed"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "pauseAnimation"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "startAnimation"]
+- !private ["s23CustomStringConvertibleP", "state"]
+- !private ["s23CustomStringConvertibleP", "stopAnimation"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "enumerated"]
+- !private ["s9DecodableP", "forEach"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "isEmpty"]
+- !private ["s9DecodableP", "map"]
+- !private ["s9DecodableP", "removeAll"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "enumerated"]
+- !private ["s9EncodableP", "forEach"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "isEmpty"]
+- !private ["s9EncodableP", "map"]
+- !private ["s9EncodableP", "removeAll"]
+- !private ["s9EncodableP", "subscript"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "active"]
+- !private ["s9EquatableP", "addCompletion"]
+- !private ["s9EquatableP", "append"]
+- ["s9EquatableP", "closed"]
+- !private ["s9EquatableP", "continueAnimation"]
+- !private ["s9EquatableP", "current"]
+- !private ["s9EquatableP", "easeOut"]
+- !private ["s9EquatableP", "end"]
+- !private ["s9EquatableP", "enumerated"]
+- !private ["s9EquatableP", "forEach"]
+- !private ["s9EquatableP", "fractionComplete"]
+- ["s9EquatableP", "hashValue"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEmpty"]
+- !private ["s9EquatableP", "isReversed"]
+- !private ["s9EquatableP", "map"]
+- ["s9EquatableP", "open"]
+- !private ["s9EquatableP", "opposite"]
+- !private ["s9EquatableP", "pauseAnimation"]
+- !private ["s9EquatableP", "removeAll"]
+- !private ["s9EquatableP", "start"]
+- !private ["s9EquatableP", "startAnimation"]
+- !private ["s9EquatableP", "state"]
+- !private ["s9EquatableP", "stopAnimation"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "enumerated"]
+- !private ["s25ExpressibleByArrayLiteralP", "forEach"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByArrayLiteralP", "map"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "active"]
+- !private ["s8HashableP", "addCompletion"]
+- ["s8HashableP", "closed"]
+- !private ["s8HashableP", "continueAnimation"]
+- !private ["s8HashableP", "current"]
+- !private ["s8HashableP", "easeOut"]
+- !private ["s8HashableP", "end"]
+- !private ["s8HashableP", "fractionComplete"]
+- ["s8HashableP", "hashValue"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isReversed"]
+- ["s8HashableP", "open"]
+- !private ["s8HashableP", "opposite"]
+- !private ["s8HashableP", "pauseAnimation"]
+- !private ["s8HashableP", "start"]
+- !private ["s8HashableP", "startAnimation"]
+- !private ["s8HashableP", "state"]
+- !private ["s8HashableP", "stopAnimation"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- ["17MSAlertController0A8AnimatorC", "AnimationBlock"]
+- ["17MSAlertController0A8AnimatorC", "CGFloat"]
+- ["17MSAlertController0A8AnimatorC", "State"]
+- ["17MSAlertController0A8AnimatorC", "UIViewPropertyAnimator"]
+- ["17MSAlertController0A8AnimatorC", "animationProgress"]
+- ["17MSAlertController0A8AnimatorC", "animators"]
+- ["17MSAlertController0A8AnimatorC", "completeAnimation"]
+- ["17MSAlertController0A8AnimatorC", "currentState"]
+- ["17MSAlertController0A8AnimatorC", "deinit"]
+- !private ["17MSAlertController0A8AnimatorC", "finalState"]
+- ["17MSAlertController0A8AnimatorC", "init"]
+- !private ["17MSAlertController0A8AnimatorC", "initialState"]
+- !private ["17MSAlertController0A8AnimatorC", "log"]
+- !private ["17MSAlertController0A8AnimatorC", "print"]
+- ["17MSAlertController0A8AnimatorC", "reverseAnimation"]
+- ["17MSAlertController0A8AnimatorC", "setAnimation"]
+- ["17MSAlertController0A8AnimatorC", "setFractionComplete"]
+- ["17MSAlertController0A8AnimatorC", "startAnimation"]
+- ["17MSAlertController0A8AnimatorC", "stopAnimation"]
+- ["17MSAlertController0A8AnimatorC", "trackProgress"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "enumerated"]
+- !private ["s17MutableCollectionP", "forEach"]
+- ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "isEmpty"]
+- !private ["s17MutableCollectionP", "map"]
+- !private ["s17MutableCollectionP", "removeAll"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["So9NSCopyingP", "addCompletion"]
+- !private ["So9NSCopyingP", "continueAnimation"]
+- !private ["So9NSCopyingP", "fractionComplete"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isReversed"]
+- !private ["So9NSCopyingP", "pauseAnimation"]
+- !private ["So9NSCopyingP", "startAnimation"]
+- !private ["So9NSCopyingP", "state"]
+- !private ["So9NSCopyingP", "stopAnimation"]
+- !private ["So8NSObjectC", "addCompletion"]
+- !private ["So8NSObjectC", "continueAnimation"]
+- !private ["So8NSObjectC", "fractionComplete"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isReversed"]
+- !private ["So8NSObjectC", "pauseAnimation"]
+- !private ["So8NSObjectC", "startAnimation"]
+- !private ["So8NSObjectC", "state"]
+- !private ["So8NSObjectC", "stopAnimation"]
+- !private ["So16NSObjectProtocolP", "addCompletion"]
+- !private ["So16NSObjectProtocolP", "continueAnimation"]
+- !private ["So16NSObjectProtocolP", "fractionComplete"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isReversed"]
+- !private ["So16NSObjectProtocolP", "pauseAnimation"]
+- !private ["So16NSObjectProtocolP", "startAnimation"]
+- !private ["So16NSObjectProtocolP", "state"]
+- !private ["So16NSObjectProtocolP", "stopAnimation"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "enumerated"]
+- !private ["s22RandomAccessCollectionP", "forEach"]
+- ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "isEmpty"]
+- !private ["s22RandomAccessCollectionP", "map"]
+- !private ["s22RandomAccessCollectionP", "removeAll"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "enumerated"]
+- !private ["s26RangeReplaceableCollectionP", "forEach"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "isEmpty"]
+- !private ["s26RangeReplaceableCollectionP", "map"]
+- !private ["s26RangeReplaceableCollectionP", "removeAll"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s16RawRepresentableP", "active"]
+- !private ["s16RawRepresentableP", "current"]
+- !private ["s16RawRepresentableP", "easeOut"]
+- !private ["s16RawRepresentableP", "end"]
+- !private ["s16RawRepresentableP", "start"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "enumerated"]
+- !private ["s8SequenceP", "forEach"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "isEmpty"]
+- !private ["s8SequenceP", "map"]
+- !private ["s8SequenceP", "removeAll"]
+- !private ["s8SequenceP", "subscript"]
+- ["17MSAlertController5StateO", "State"]
+- ["17MSAlertController5StateO", "__derived_enum_equals"]
+- ["17MSAlertController5StateO", "closed"]
+- ["17MSAlertController5StateO", "deinit"]
+- ["17MSAlertController5StateO", "hashValue"]
+- ["17MSAlertController5StateO", "open"]
+- ["17MSAlertController5StateO", "opposite"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So15UIViewAnimatingP", "addCompletion"]
+- !private ["So15UIViewAnimatingP", "continueAnimation"]
+- !private ["So15UIViewAnimatingP", "fractionComplete"]
+- !private ["So15UIViewAnimatingP", "init"]
+- !private ["So15UIViewAnimatingP", "isReversed"]
+- !private ["So15UIViewAnimatingP", "pauseAnimation"]
+- !private ["So15UIViewAnimatingP", "startAnimation"]
+- !private ["So15UIViewAnimatingP", "state"]
+- !private ["So15UIViewAnimatingP", "stopAnimation"]
+- !private ["SC23UIViewAnimatingPositionO", "current"]
+- !private ["SC23UIViewAnimatingPositionO", "end"]
+- !private ["SC23UIViewAnimatingPositionO", "start"]
+- !private ["SC20UIViewAnimatingStateO", "active"]
+- !private ["SC20UIViewAnimationCurveO", "easeOut"]
+- !private ["So25UIViewImplicitlyAnimatingP", "addCompletion"]
+- !private ["So25UIViewImplicitlyAnimatingP", "continueAnimation"]
+- !private ["So25UIViewImplicitlyAnimatingP", "fractionComplete"]
+- !private ["So25UIViewImplicitlyAnimatingP", "init"]
+- !private ["So25UIViewImplicitlyAnimatingP", "isReversed"]
+- !private ["So25UIViewImplicitlyAnimatingP", "pauseAnimation"]
+- !private ["So25UIViewImplicitlyAnimatingP", "startAnimation"]
+- !private ["So25UIViewImplicitlyAnimatingP", "state"]
+- !private ["So25UIViewImplicitlyAnimatingP", "stopAnimation"]
+- !private ["So22UIViewPropertyAnimatorC", "addCompletion"]
+- !private ["So22UIViewPropertyAnimatorC", "continueAnimation"]
+- !private ["So22UIViewPropertyAnimatorC", "fractionComplete"]
+- !private ["So22UIViewPropertyAnimatorC", "init"]
+- !private ["So22UIViewPropertyAnimatorC", "isReversed"]
+- !private ["So22UIViewPropertyAnimatorC", "pauseAnimation"]
+- !private ["So22UIViewPropertyAnimatorC", "startAnimation"]
+- !private ["So22UIViewPropertyAnimatorC", "state"]
+- !private ["So22UIViewPropertyAnimatorC", "stopAnimation"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "enumerated"]
+- !private ["s14_ArrayProtocolP", "forEach"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "isEmpty"]
+- !private ["s14_ArrayProtocolP", "map"]
+- !private ["s14_ArrayProtocolP", "removeAll"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "enumerated"]
+- !private ["s24_DestructorSafeContainerP", "forEach"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s24_DestructorSafeContainerP", "map"]
+- !private ["s24_DestructorSafeContainerP", "removeAll"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addCompletion"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "continueAnimation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fractionComplete"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isReversed"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pauseAnimation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "startAnimation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "state"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stopAnimation"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "enumerated"]
+- !private ["s21_ObjectiveCBridgeableP", "forEach"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "removeAll"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "17MSAlertController11ActionSheetO"
+- "Sa"
+- "s23BidirectionalCollectionP"
+- !private "Sb"
+- "s7CVarArgP"
+- "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- "17MSAlertController0A8AnimatorC"
+- !private "s10MirrorPathP"
+- "s17MutableCollectionP"
+- !private "So9NSCopyingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- "s8SequenceP"
+- "17MSAlertController5StateO"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So15UIViewAnimatingP"
+- !private "SC23UIViewAnimatingPositionO"
+- !private "SC20UIViewAnimatingStateO"
+- !private "SC20UIViewAnimationCurveO"
+- !private "So25UIViewImplicitlyAnimatingP"
+- !private "So22UIViewPropertyAnimatorC"
+- "s14_ArrayProtocolP"
+- "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertController/MSAlertController.h"
+- "/Users/manishkumar/Documents/CleanSwift/MSAlertController/DerivedData/MSAlertController/Build/Intermediates.noindex/MSAlertController.build/Debug-iphoneos/MSAlertController.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "15079b54dee8465ffbae8b6096933313"
