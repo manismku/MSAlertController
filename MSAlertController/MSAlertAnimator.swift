@@ -25,13 +25,13 @@ extension State {
 
 
 // Actionsheet state
-enum ActionSheet {
+enum ActionSheetState {
     case closed
     case open
 }
 
-extension ActionSheet {
-    var opposite: ActionSheet {
+extension ActionSheetState {
+    var opposite: ActionSheetState {
         switch self {
         case .open: return .closed
         case .closed: return .open

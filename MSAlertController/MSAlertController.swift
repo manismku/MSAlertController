@@ -15,7 +15,7 @@ public class MSAlertViewController: UIViewController {
 
     var appearance: Appearance?
     var preferredStyle: MSAlertControllerStyle!
-    var actionSheet: ActionSheet = .closed
+    var actionSheet: ActionSheetState = .closed
     var dynAnimator: UIDynamicAnimator!
 
     var gesture: UISwipeGestureRecognizer!
@@ -272,15 +272,19 @@ extension HandleTapGesture {
 typealias HandlePanGesture = MSAlertViewController
 extension HandlePanGesture: UIGestureRecognizerDelegate {
     
-
     @objc func handlePan(sender: UIPanGestureRecognizer) {
+
+        // skip touch handle
+        if actionSheet == .open {
+            return
+        }
         
         switch sender.state {
             
             case .began:
                 startLocation = sender.location(in: view)
                 if let direction = sender.direction {
-                    if animatorObj?.currentState == .closed {
+                    if animatorObj?.currentState == .closed  {
                         if direction == .left {
                             animatorObj?.setAnimation(to: .open)
                         }

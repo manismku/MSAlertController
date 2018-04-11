@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
-options: "bb8da932254bcc26cd7b4839967ddf1e"
-build_time: [1523460015, 844472000]
-inputs:
-  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertControllerExample/MSAlertControllerExample/ViewController.swift": [1523373932, 0]
-  "/Users/manishkumar/Documents/CleanSwift/MSAlertController/MSAlertControllerExample/MSAlertControllerExample/AppDelegate.swift": [1522225742, 0]
