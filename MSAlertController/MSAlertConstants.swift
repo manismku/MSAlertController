@@ -8,14 +8,7 @@
 
 import Foundation
 
-typealias AnimationBlock = ()->Void
-
-public enum MSAlertControllerStyle {
-    case MSAlertControllerStyleDefault
-    case MSAlertControllerStyleShowMoreList
-    case MSAlertControllerStyleShowMoreGrid
-    case MSAlertControllerStyleSlideView
-}
+typealias AnimationBlock = () -> Void
 
 struct Constants {
      struct Device {
@@ -50,15 +43,13 @@ struct Constants {
         static let ActionSheetRowPadding: CGFloat = 5
         static let ActionSheetLinedHeight: CGFloat = 0.5
     }
-    
+
     struct ViewAlpha {
         static let line: CGFloat = 0.75
         static let max: CGFloat = 1
         static let min: CGFloat = 0
     }
 }
-
-
 public struct Appearance {
     public var bgColor: UIColor
     public var headerBgColor: UIColor
@@ -68,6 +59,18 @@ public struct Appearance {
     public var windowHeight: CGFloat
     public var bodyFont: UIFont?
     public var titleFont: UIFont?
+    public var titleAllignment: TitleAlignmnet
+
+    public enum Theme {
+        case dark
+        case light
+        case grey
+    }
+
+    public enum TitleAlignmnet {
+        case left
+        case centre
+    }
 
     public init() {
         self.bgColor = UIColor(red: 250/255, green: 250/255, blue: 254/255, alpha: 1.0)
@@ -78,7 +81,43 @@ public struct Appearance {
         self.windowHeight = 120
         self.bodyFont = UIFont(name: "HelveticaNeue", size: 14)
         self.titleFont = UIFont(name: "HelveticaNeue", size: 12)
+        self.titleAllignment = .left
+    }
+
+    static func defaultTheme() -> Appearance {
+        var theme =  Appearance()
+        theme.bgColor = UIColor(red: 250/255, green: 250/255, blue: 254/255, alpha: 1.0)
+        theme.headerBgColor = UIColor(red: 223/255, green: 198/255, blue: 204/255, alpha: 1)
+        theme.titleColor = UIColor(red: 168/255, green: 57/255, blue: 57/255, alpha: 1.0)
+        theme.bodyTextColor = UIColor(red: 168/255, green: 57/255, blue: 57/255, alpha: 1.0)
+        theme.sideViewBgColor = UIColor(red: 250/255, green: 250/255, blue: 254/255, alpha: 0.75)
+        theme.windowHeight = 120
+        theme.bodyFont = UIFont(name: "HelveticaNeue", size: 14)
+        theme.titleFont = UIFont(name: "HelveticaNeue", size: 12)
+        return theme
+    }
+
+    static func greyTheme() -> Appearance {
+        var theme =  Appearance()
+        theme.bgColor = UIColor(red: 250/255, green: 250/255, blue: 254/255, alpha: 0.75)
+        theme.headerBgColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 1)
+        theme.titleColor = UIColor(red: 26/255, green: 26/255, blue: 27/255, alpha: 1)
+        theme.bodyTextColor = UIColor(red: 9/255, green: 10/255, blue: 10/255, alpha: 1)
+        theme.sideViewBgColor = UIColor(red: 250/255, green: 250/255, blue: 254/255, alpha: 0.75)
+        theme.windowHeight = 120
+        theme.bodyFont = UIFont(name: "HelveticaNeue", size: 14)
+        theme.titleFont = UIFont(name: "HelveticaNeue", size: 12)
+        return theme
+    }
+
+    // theme factory
+    public static func createTheme(theme: Theme) -> Appearance {
+        var appearance: Appearance!
+        switch theme {
+            case .dark: appearance =  defaultTheme()
+            case .grey: appearance =  greyTheme()
+            case .light: appearance =  defaultTheme()
+        }
+        return appearance
     }
 }
-
-

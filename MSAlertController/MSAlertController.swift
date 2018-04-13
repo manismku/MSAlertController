@@ -9,12 +9,14 @@
 import UIKit
 import UIKit.UIGestureRecognizerSubclass
 
-
-
-public class MSAlertViewController: UIViewController {
+enum MSAlertControllerStyle {
+    case Default
+    case SideImage
+}
+public class MSAlertController: UIViewController {
 
     var appearance: Appearance?
-    var preferredStyle: MSAlertControllerStyle!
+    private var preferredStyle: MSAlertControllerStyle = .Default
     var actionSheet: ActionSheetState = .closed
     var dynAnimator: UIDynamicAnimator!
 
@@ -22,7 +24,7 @@ public class MSAlertViewController: UIViewController {
     var message: String
     private var alertView: MSAlertView!
     private var sideView: MSAlertSideview!
-    
+
     private lazy var blurEffectView: UIVisualEffectView = {
         self.view.backgroundColor = .clear
         let blurEffect = UIBlurEffect(style: .dark)
@@ -44,11 +46,10 @@ public class MSAlertViewController: UIViewController {
         cancelButton.adjustsImageWhenDisabled = false
         return cancelButton
     }()
-    
     private var actions = [MSAlertAction]()
     private var animatorObj: MSAlertAnimator?
     
-    private var style: MSAlertControllerStyle = .MSAlertControllerStyleDefault
+    private var style: MSAlertControllerStyle = .Default
     private let screen = UIScreen.main.bounds
     private var maxdx: CGFloat = Constants.Device.DeviceWidth
     // Constraints
@@ -59,74 +60,59 @@ public class MSAlertViewController: UIViewController {
     private var height: NSLayoutConstraint!
     private var startLocation: CGPoint = CGPoint.zero
     private var currentLocation: CGPoint = CGPoint.zero
-    
     private var sideGap: CGFloat {
         let dx = currentLocation.x - startLocation.x
         let dy = currentLocation.y - startLocation.y
         let distance = sqrt(dx*dx + dy*dy)
         return distance
     }
-    
-    public init(title: String, message: String, preferredStyle:MSAlertControllerStyle = .MSAlertControllerStyleDefault, appearance: Appearance = Appearance()) {
+    public init(title: String, message: String, appearance: Appearance = Appearance(), sideView: UIView = {let label = UILabel(frame: CGRect.zero)
+        label.text = "View"
+        label.font = UIFont(name: "HelveticaNeue", size: 20)
+        return label}()) {
         self.message = message
-        self.style = preferredStyle
         self.appearance = appearance
         super.init(nibName: nil, bundle: nil)
-        
-        modalPresentationStyle = .overFullScreen
-        self.transitioningDelegate = self
-    
         animatorObj = MSAlertAnimator(state: closeAlertView(), final: openAlertView())
-        alertView = MSAlertView(frame: CGRect.zero, title: title, appearance: appearance)
+        addPresentationDelegate()
+        alertView = MSAlertView(frame: CGRect.zero, title: title, appearance: appearance, preferredStyle: self.style)
         alertView.textBody.text = message
-        
-        sideView = MSAlertSideview(frame: CGRect.zero, theme: appearance)
-        
+        if sideView is UIImageView {
+            preferredStyle = .SideImage
+        }
+        self.sideView = MSAlertSideview(frame: CGRect.zero, theme: appearance, view: sideView)
     }
-    
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     override public func viewDidLoad() {
         super.viewDidLoad()
         layout()
         addGesture()
         dynAnimator = UIDynamicAnimator(referenceView: view)
     }
-    
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-    
+
+    func addPresentationDelegate() {
+        modalPresentationStyle = .overFullScreen
+        self.transitioningDelegate = self
+    }
     func addGesture() {
         let pan = InstantPanGestureRecognizer(target: self, action: #selector(handlePan))
         pan.delegate = self
-
         alertView.addGestureRecognizer(pan)
-        
-        /*
-        [UISwipeGestureRecognizerDirection.right, .left].map({
-            let swipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
-            swipe.direction = $0
-            swipe.delegate = self
-            alertView.addGestureRecognizer(swipe)
-        })
-        let swipe = InstantSwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
-        swipe.direction = .left
-        alertView.addGestureRecognizer(swipe)
-        */
-        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleSideTap))
         tapGesture.numberOfTapsRequired = 1
         tapGesture.numberOfTouchesRequired = 1
-        sideView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSideTap)))
+        if preferredStyle == .Default {
+            sideView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSideTap)))
+        }
     }
-    
     func layout() {
         let margins = view.layoutMarginsGuide
         if !UIAccessibilityIsReduceTransparencyEnabled() {
@@ -134,17 +120,14 @@ public class MSAlertViewController: UIViewController {
         } else {
             view.backgroundColor = .black
         }
-        
         alertView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(alertView)
-        
         left = alertView.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: Constants.Layout.Zero)
         left.isActive = true
         right = alertView.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: Constants.Layout.Zero)
         right.isActive = true
         top = alertView.topAnchor.constraint(equalTo: margins.topAnchor, constant: Constants.Layout.AlertViewTop)
         top.isActive = true
-        
         let textHeight = self.message.height(withConstrainedWidth: 100, font: (appearance?.bodyFont)!) + alertView.lblBottomHeight + 10
 
         if Int(textHeight) > 200 {
@@ -154,9 +137,7 @@ public class MSAlertViewController: UIViewController {
         } else {
             height = alertView.heightAnchor.constraint(equalToConstant: textHeight)
         }
-        
         height.isActive = true
-        
         sideView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(sideView)
         widthConstraint = sideView.widthAnchor.constraint(equalToConstant: Constants.Layout.SideViewInitialWidth)
@@ -164,16 +145,13 @@ public class MSAlertViewController: UIViewController {
         sideView.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
         sideView.topAnchor.constraint(equalTo: alertView.topAnchor).isActive = true
         sideView.heightAnchor.constraint(equalTo: alertView.heightAnchor).isActive = true
-        
         view.addSubview(cancelBttn)
         cancelBttn.bottomAnchor.constraint(equalTo: margins.topAnchor, constant: Constants.Layout.CancelButtonBottom).isActive = true
         cancelBttn.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: Constants.Layout.Zero).isActive = true
         cancelBttn.heightAnchor.constraint(equalToConstant: Constants.Layout.CancelButtonHeight).isActive = true
         cancelBttn.widthAnchor.constraint(equalToConstant: Constants.Layout.CancelButtonWidth).isActive = true
-  
     }
-    
-    func openAlertView() -> (()-> Void) {
+    func openAlertView() -> (() -> Void) {
         return { [weak self] in
             if let weakSelf = self {
                 weakSelf.left.constant = Constants.Layout.AlertViewMaxLeft
@@ -187,8 +165,7 @@ public class MSAlertViewController: UIViewController {
             }
         }
     }
-    
-    func closeAlertView() -> (()-> Void) {
+    func closeAlertView() -> (() -> Void) {
         return { [weak self] in
             if let weakSelf = self {
                 weakSelf.left.constant = Constants.Layout.Zero
@@ -202,11 +179,10 @@ public class MSAlertViewController: UIViewController {
             }
         }
     }
-    
+
     @objc func dismissView(sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-    
     deinit {
         print("Alertview controller deleted")
     }
@@ -229,9 +205,8 @@ class InstantSwipeGestureRecognizer: UISwipeGestureRecognizer {
     }
 }
 
-typealias HandleSwipeGesture = MSAlertViewController
+typealias HandleSwipeGesture = MSAlertController
 extension HandleSwipeGesture {
-    
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
                                   shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         // Do not begin the pan until the swipe fails.
@@ -242,7 +217,6 @@ extension HandleSwipeGesture {
         }
         return false
     }
- 
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.direction == .left {
             print("left swipe")
@@ -251,12 +225,12 @@ extension HandleSwipeGesture {
 }
 
 // MARK: Tap
-typealias HandleTapGesture = MSAlertViewController
+typealias HandleTapGesture = MSAlertController
 extension HandleTapGesture {
     @objc func handleSideTap(sender: UIPanGestureRecognizer) {
         animatorObj?.setAnimation(to: .closed)
         animatorObj?.completeAnimation()
-        if  self.actions.count > 0  {
+        if  self.actions.count > 0 {
             let sheet = MSAlertActionSheet(frame: CGRect.zero, actions: self.actions)
             self.view.addSubview(sheet)
             sheet.topAnchor.constraint(equalTo: alertView.bottomAnchor, constant: Constants.Layout.ActionSheetTop).isActive = true
@@ -269,22 +243,18 @@ extension HandleTapGesture {
 }
 
 // MARK: Pan
-typealias HandlePanGesture = MSAlertViewController
+typealias HandlePanGesture = MSAlertController
 extension HandlePanGesture: UIGestureRecognizerDelegate {
-    
     @objc func handlePan(sender: UIPanGestureRecognizer) {
-
         // skip touch handle
         if actionSheet == .open {
             return
         }
-        
         switch sender.state {
-            
             case .began:
                 startLocation = sender.location(in: view)
                 if let direction = sender.direction {
-                    if animatorObj?.currentState == .closed  {
+                    if animatorObj?.currentState == .closed {
                         if direction == .left {
                             animatorObj?.setAnimation(to: .open)
                         }
@@ -309,8 +279,8 @@ extension HandlePanGesture: UIGestureRecognizerDelegate {
     }
 }
 
-// MARK:- Transition Delegate
-typealias CustomPresentationControllerDelegate = MSAlertViewController
+// MARK: - Transition Delegate
+typealias CustomPresentationControllerDelegate = MSAlertController
 extension CustomPresentationControllerDelegate: UIViewControllerTransitioningDelegate {
 
     public func presentationController(forPresented presented: UIViewController,
@@ -320,14 +290,13 @@ extension CustomPresentationControllerDelegate: UIViewControllerTransitioningDel
                                                                    presenting: presenting)
         return presentationController
     }
-    
-    
+
     public func animationController(forPresented presented: UIViewController,
                              presenting: UIViewController,
                              source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return MSAlertPresentationAnimator(animation: .MSAlertCustomPresentationAnimationBottomToTop, presenting: true)
     }
-    
+
     /*
     public func animationController(forDismissed dismissed: UIViewController)
         -> UIViewControllerAnimatedTransitioning? {
@@ -336,23 +305,11 @@ extension CustomPresentationControllerDelegate: UIViewControllerTransitioningDel
     */
 }
 
-// MARK:- API
-public extension MSAlertViewController {
+// MARK: - API
+public extension MSAlertController {
     public func addAction(action: MSAlertAction) {
-        if actions.count < 3 {
+        if actions.count < 3 &&  preferredStyle == .Default {
             actions.append(action)
         }
     }
-    
-    public func setAppearance(apr: @escaping () -> Appearance) {
-        self.appearance = apr()
-        DispatchQueue.main.async {
-            self.alertView.backgroundColor = self.appearance?.bgColor
-            self.alertView.headerView.backgroundColor = self.appearance?.headerBgColor
-        }
-    }
 }
-
-
-
-

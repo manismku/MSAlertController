@@ -9,9 +9,9 @@
 import UIKit
 
 class MSAlertView: UIView {
-    
     var title: String
     var theme: Appearance
+    var style: MSAlertControllerStyle
     lazy var headerView: UIView = {
         let view  = UIView(frame: CGRect.zero)
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -49,13 +49,13 @@ class MSAlertView: UIView {
         txtView.textContainer.lineFragmentPadding = 0;
         txtView.textContainer.lineBreakMode = .byTruncatingTail
         txtView.textContainer.maximumNumberOfLines = 7
-        
-       return txtView
+        return txtView
     }()
     
-    init(frame: CGRect, title: String, appearance: Appearance) {
+    init(frame: CGRect, title: String, appearance: Appearance, preferredStyle: MSAlertControllerStyle) {
         self.title = title
         self.theme = appearance
+        self.style = preferredStyle
         super.init(frame: frame)
         commontInit()
         textBody.font = appearance.bodyFont
@@ -64,6 +64,7 @@ class MSAlertView: UIView {
         headerTitle.font = appearance.titleFont
         headerTitle.textColor = appearance.titleColor
         backgroundColor = appearance.bgColor
+
     }
     
     deinit {
@@ -84,13 +85,16 @@ class MSAlertView: UIView {
 
 
     func layout() {
-    
+        
         let margins = layoutMarginsGuide
         
-        // customize header
         headerView.addSubview(headerTitle)
-        headerTitle.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 5).isActive = true
         headerTitle.centerYAnchor.constraint(equalTo: headerView.centerYAnchor, constant: 0).isActive = true
+        if theme.titleAllignment == .left {
+            headerTitle.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 15).isActive = true
+        } else if theme.titleAllignment == .centre {
+            headerTitle.centerXAnchor.constraint(equalTo: headerView.centerXAnchor, constant: 0).isActive = true
+        }
         
         addSubview(headerView)
         headerView.heightAnchor.constraint(equalToConstant: Constants.Layout.AlertViewHeaderHeight).isActive = true
@@ -100,16 +104,19 @@ class MSAlertView: UIView {
 
         addSubview(textBody)
         textBody.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 5).isActive = true
-        textBody.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 10).isActive = true
-        textBody.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 10).isActive = true
+        textBody.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 5).isActive = true
+        textBody.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 5).isActive = true
         textBody.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: 10).isActive = true
 
-        addSubview(textIndicator)
-        textIndicator.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 10).isActive = true
-        textIndicator.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: 0).isActive = true
-        //textIndicator.heightAnchor.constraint(equalToConstant: 20).isActive = true
-    
+        if style == .Default {
+            addSubview(textIndicator)
+            textIndicator.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 5).isActive = true
+            textIndicator.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: 0).isActive = true
+        } else {
+            headerView.addSubview(textIndicator)
+            textIndicator.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -5).isActive = true
+            textIndicator.centerYAnchor.constraint(equalTo: headerView.centerYAnchor, constant: 0).isActive = true
+        }
     }
-    
     
 }

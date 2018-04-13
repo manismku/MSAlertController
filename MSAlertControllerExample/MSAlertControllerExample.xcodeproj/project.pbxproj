@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		792E3249207CFAA30003DF64 /* MSAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792E3248207CFAA30003DF64 /* MSAlertController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		792E324A207CFAA30003DF64 /* MSAlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 792E3248207CFAA30003DF64 /* MSAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79E1B18D208116CC001A37FE /* MSAlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79F3E5CB20468BF500584160 /* MSAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		79F3E5A220468BBC00584160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3E5A120468BBC00584160 /* AppDelegate.swift */; };
 		79F3E5A420468BBC00584160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3E5A320468BBC00584160 /* ViewController.swift */; };
 		79F3E5A720468BBC00584160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F3E5A520468BBC00584160 /* Main.storyboard */; };
@@ -34,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				792E324A207CFAA30003DF64 /* MSAlertController.framework in Embed Frameworks */,
+				79E1B18D208116CC001A37FE /* MSAlertController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		792E3248207CFAA30003DF64 /* MSAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MSAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F3E59E20468BBC00584160 /* MSAlertControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSAlertControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F3E5A120468BBC00584160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F3E5A320468BBC00584160 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				792E3249207CFAA30003DF64 /* MSAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +72,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		795B9ABA2081268000FAF235 /* PromoAsset */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PromoAsset;
+			sourceTree = "<group>";
+		};
 		79F3E59520468BBC00584160 = {
 			isa = PBXGroup;
 			children = (
-				792E3248207CFAA30003DF64 /* MSAlertController.framework */,
+				795B9ABA2081268000FAF235 /* PromoAsset */,
 				79F3E5A020468BBC00584160 /* MSAlertControllerExample */,
 				79F3E5B520468BBC00584160 /* MSAlertControllerExampleTests */,
 				79F3E59F20468BBC00584160 /* Products */,

@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-
 /**
  * Presents a view controller modally by superposing it's view on top of the
  * presenting's view, but retaining it's context.
@@ -32,7 +30,7 @@ class MSAlertPresentationController: UIPresentationController {
     }
 }
 
-//MARK:- Add Dimming View
+// MARK: - Add Dimming View
 private extension MSAlertPresentationController {
     func setupDimmingView() {
         dimmingView = UIView()
@@ -42,50 +40,37 @@ private extension MSAlertPresentationController {
     }
 }
 
-//MARK:- MSAlertPresentationAnimator Object
+// MARK: - MSAlertPresentationAnimator Object
 class MSAlertPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     private var isPresenting: Bool
     private var animation: MSAlertCustomPresentationAnimation
-    
     
     init(animation presentationAnimation: MSAlertCustomPresentationAnimation, presenting isPresenting: Bool) {
         self.isPresenting = isPresenting
         self.animation = presentationAnimation
         super.init()
     }
-    
     deinit {
         print("MSAlertPresentationAnimator object is deleted")
     }
     
-    //MARK:- UIViewControllerAnimatedTransitioning Protocol
+    // MARK: - UIViewControllerAnimatedTransitioning Protocol
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return MSCustomPresentationAnimationDuration
     }
-    
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        
         let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!
         let containerView = transitionContext.containerView
         let toView = toViewController.view
-        
-        
         if isPresenting {
             containerView.addSubview(toView!)
             toView?.frame = CGRect(x: containerView.frame.origin.x, y: containerView.frame.origin.y + containerView.frame.size.height, width: containerView.frame.size.width, height: containerView.frame.size.height)
-            
-            
-            toView?.alpha = 1.0
-            
+
+            toView?.alpha = 1.0            
             UIView.animate(withDuration: MSCustomPresentationAnimationDuration, animations: {
                 toView?.frame = containerView.frame
                 transitionContext.completeTransition(true)
             })
         }
-        
     }
-    
 }
-
-
-

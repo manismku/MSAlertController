@@ -24,13 +24,18 @@ class ViewController: UIViewController {
 
 
     @IBAction func showAlert(_ sender: Any) {
-        //let vc = MSAlertViewController(title: "INSTAGRAM", message: "Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!!")
+        let vc = MSAlertController(title: "INSTAGRAM", message: "Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!!")
         
-         //let vc = MSAlertViewController(title: "INSTAGRAM", message: "Happy Coding!! Happy Coding!! Happy Coding!!")
-         let vc = MSAlertViewController(title: "INSTAGRAM", message: "Lets meet at Park Square!!")
+         //let vc = MSAlertController(title: "INSTAGRAM", message: "Happy Coding!! Happy Coding!! Happy Coding!!")
+         //let vc = MSAlertController(title: "INSTAGRAM", message: "Lets meet at Park Square!!",  preferredStyle: .MSAlertControllerStyleShowMoreList)
+
         
-        //vc.setAppearance { () -> Appearance in
-        //}
+        var apr = Appearance.createTheme(theme: .grey)
+        apr.titleAllignment = .centre
+
+        //let vc = MSAlertController(title: "INSTAGRAM", message: "Meet me at Park Square!!", appearance: apr, sideView: UIImageView.init(image: UIImage(named: "avatar")))
+        //let vc = MSAlertController(title: "INSTAGRAM", message: "Meet me at Park Square!!",sideView: UIImageView.init(image: UIImage(named: "avatar")))
+
         
         let viewAction = MSAlertAction(title: "View") {
             self.dismiss(animated: true, completion: nil)

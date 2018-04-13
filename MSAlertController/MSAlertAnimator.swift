@@ -23,7 +23,6 @@ extension State {
     }
 }
 
-
 // Actionsheet state
 enum ActionSheetState {
     case closed

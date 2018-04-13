@@ -10,26 +10,25 @@ import Foundation
 
 class MSAlertSideview: UIView {
     
-    private var viewLabel: UILabel!
     var theme: Appearance
-    
-    func createLabel() -> UILabel {
-        let label = UILabel(frame: CGRect.zero)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "View"
-        label.font = UIFont(name: "HelveticaNeue", size: 20)
-        return label
-    }
-    
-    init(frame: CGRect, theme: Appearance) {
+    init(frame: CGRect, theme: Appearance, view: UIView) {
         self.theme = theme
         super.init(frame: frame)
         self.alpha = 0
-        DispatchQueue.main.async {
-            [weak self] in
-            self?.viewLabel = self?.createLabel()
-            self?.commontInit()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+
+        if view is UILabel { // refactor to style
+            view.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+            view.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        } else {
+            view.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+            view.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+            view.topAnchor.constraint(equalTo: topAnchor).isActive = true
+            view.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         }
+
+        self.commontInit()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -41,11 +40,6 @@ class MSAlertSideview: UIView {
         backgroundColor = theme.sideViewBgColor
         layer.roundCorners(radius: 10)
         layer.masksToBounds = true
-        
-        addSubview(viewLabel)
-        viewLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        viewLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        
     }
 
 }

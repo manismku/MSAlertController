@@ -16,11 +16,6 @@ public class MSAlertAction: NSObject {
         self.title = title
         self.handler = handler
     }
-    
-    deinit {
-        print("Alert action is deleted")
-    }
-    
 }
 
 
