@@ -14,6 +14,10 @@
 		792E323F207CEA520003DF64 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E323E207CEA520003DF64 /* String+Extension.swift */; };
 		792E324D207DEA850003DF64 /* UIPanGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792E324C207DEA850003DF64 /* UIPanGestureRecognizer+Extension.swift */; };
 		79393D0B206D78780023A8E3 /* MSAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79393D0A206D78780023A8E3 /* MSAlertAction.swift */; };
+		795B9ABE20812A1100FAF235 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B9ABD20812A1100FAF235 /* Theme.swift */; };
+		795B9AC020812AD400FAF235 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795B9ABF20812AD400FAF235 /* UIFont+Extension.swift */; };
+		795B9AEC2081B57500FAF235 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79F3E57920468AD900584160 /* Info.plist */; };
+		795B9AF32081BF5900FAF235 /* Fonts.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 795B9AF22081BF5900FAF235 /* Fonts.bundle */; };
 		79F3E57F20468AD900584160 /* MSAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F3E57520468AD900584160 /* MSAlertController.framework */; };
 		79F3E58420468AD900584160 /* MSAlertControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3E58320468AD900584160 /* MSAlertControllerTests.swift */; };
 		79F3E58620468AD900584160 /* MSAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 79F3E57820468AD900584160 /* MSAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,6 +61,9 @@
 		792E323E207CEA520003DF64 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		792E324C207DEA850003DF64 /* UIPanGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPanGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
 		79393D0A206D78780023A8E3 /* MSAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSAlertAction.swift; sourceTree = "<group>"; };
+		795B9ABD20812A1100FAF235 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		795B9ABF20812AD400FAF235 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		795B9AF22081BF5900FAF235 /* Fonts.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Fonts.bundle; sourceTree = "<group>"; };
 		79F3E57520468AD900584160 /* MSAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F3E57820468AD900584160 /* MSAlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAlertController.h; sourceTree = "<group>"; };
 		79F3E57920468AD900584160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +120,7 @@
 		79F3E57720468AD900584160 /* MSAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				795B9AF22081BF5900FAF235 /* Fonts.bundle */,
 				79F3E58F20468B4300584160 /* MSAlertView.swift */,
 				79F3E59020468B4300584160 /* MSAlertController.swift */,
 				79F3E59120468B4300584160 /* Extensions.swift */,
@@ -128,6 +136,8 @@
 				79159313206E75D800429716 /* Assets.xcassets */,
 				792E323E207CEA520003DF64 /* String+Extension.swift */,
 				792E324C207DEA850003DF64 /* UIPanGestureRecognizer+Extension.swift */,
+				795B9ABD20812A1100FAF235 /* Theme.swift */,
+				795B9ABF20812AD400FAF235 /* UIFont+Extension.swift */,
 			);
 			path = MSAlertController;
 			sourceTree = "<group>";
@@ -270,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79159314206E75D800429716 /* Assets.xcassets in Resources */,
+				795B9AF32081BF5900FAF235 /* Fonts.bundle in Resources */,
+				795B9AEC2081B57500FAF235 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,10 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795B9AC020812AD400FAF235 /* UIFont+Extension.swift in Sources */,
 				79F3E59320468B4300584160 /* MSAlertController.swift in Sources */,
 				792E323F207CEA520003DF64 /* String+Extension.swift in Sources */,
 				79393D0B206D78780023A8E3 /* MSAlertAction.swift in Sources */,
 				79F3E59420468B4300584160 /* Extensions.swift in Sources */,
+				795B9ABE20812A1100FAF235 /* Theme.swift in Sources */,
 				79F3E5CE2046A34300584160 /* MSAlertPresentationController.swift in Sources */,
 				79F3E5D0204711FE00584160 /* MSAlertSideview.swift in Sources */,
 				79FA7863205A635000A0E25F /* MSAlertConstants.swift in Sources */,

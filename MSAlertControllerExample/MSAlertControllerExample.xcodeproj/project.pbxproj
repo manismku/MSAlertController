@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79E1B18D208116CC001A37FE /* MSAlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79F3E5CB20468BF500584160 /* MSAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		795B9AFF2081D49400FAF235 /* MSAlertController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795B9AFD2081D42500FAF235 /* MSAlertController.framework */; };
+		795B9B002081D49400FAF235 /* MSAlertController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 795B9AFD2081D42500FAF235 /* MSAlertController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		795B9B032081D96700FAF235 /* Video-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 795B9B022081D96600FAF235 /* Video-1.mp4 */; };
 		79F3E5A220468BBC00584160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3E5A120468BBC00584160 /* AppDelegate.swift */; };
 		79F3E5A420468BBC00584160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F3E5A320468BBC00584160 /* ViewController.swift */; };
 		79F3E5A720468BBC00584160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F3E5A520468BBC00584160 /* Main.storyboard */; };
@@ -27,13 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		792E324B207CFAA30003DF64 /* Embed Frameworks */ = {
+		795B9B012081D49400FAF235 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				79E1B18D208116CC001A37FE /* MSAlertController.framework in Embed Frameworks */,
+				795B9B002081D49400FAF235 /* MSAlertController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		795B9AFD2081D42500FAF235 /* MSAlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MSAlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		795B9B022081D96600FAF235 /* Video-1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Video-1.mp4"; sourceTree = "<group>"; };
 		79F3E59E20468BBC00584160 /* MSAlertControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSAlertControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F3E5A120468BBC00584160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F3E5A320468BBC00584160 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				795B9AFF2081D49400FAF235 /* MSAlertController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +80,7 @@
 		795B9ABA2081268000FAF235 /* PromoAsset */ = {
 			isa = PBXGroup;
 			children = (
+				795B9B022081D96600FAF235 /* Video-1.mp4 */,
 			);
 			path = PromoAsset;
 			sourceTree = "<group>";
@@ -124,6 +130,7 @@
 		79F3E5CA20468BF500584160 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				795B9AFD2081D42500FAF235 /* MSAlertController.framework */,
 				79F3E5CB20468BF500584160 /* MSAlertController.framework */,
 			);
 			name = Frameworks;
@@ -139,7 +146,7 @@
 				79F3E59A20468BBC00584160 /* Sources */,
 				79F3E59B20468BBC00584160 /* Frameworks */,
 				79F3E59C20468BBC00584160 /* Resources */,
-				792E324B207CFAA30003DF64 /* Embed Frameworks */,
+				795B9B012081D49400FAF235 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +226,7 @@
 				79F3E5AC20468BBC00584160 /* LaunchScreen.storyboard in Resources */,
 				79F3E5A920468BBC00584160 /* Assets.xcassets in Resources */,
 				79F3E5A720468BBC00584160 /* Main.storyboard in Resources */,
+				795B9B032081D96700FAF235 /* Video-1.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

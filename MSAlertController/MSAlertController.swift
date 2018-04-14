@@ -68,7 +68,7 @@ public class MSAlertController: UIViewController {
     }
     public init(title: String, message: String, appearance: Appearance = Appearance(), sideView: UIView = {let label = UILabel(frame: CGRect.zero)
         label.text = "View"
-        label.font = UIFont(name: "HelveticaNeue", size: 20)
+        label.font = UIFont(name: "SanFranciscoText-Medium", size: 20)
         return label}()) {
         self.message = message
         self.appearance = appearance
@@ -82,6 +82,14 @@ public class MSAlertController: UIViewController {
         }
         self.sideView = MSAlertSideview(frame: CGRect.zero, theme: appearance, view: sideView)
     }
+
+    public override var shouldAutorotate: Bool {
+        return false
+    }
+    public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         fatalError("init(coder:) has not been implemented")
     }

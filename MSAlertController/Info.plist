@@ -20,5 +20,13 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SanFranciscoText-Medium.otf</string>
+		<string>SanFranciscoText-Semibold.otf</string>
+		<string>SanFranciscoText-Regular.otf</string>
+		<string>SanFranciscoText-Bold.otf</string>
+		<string>SanFranciscoText-LightItalic.otf</string>
+	</array>
 </dict>
 </plist>

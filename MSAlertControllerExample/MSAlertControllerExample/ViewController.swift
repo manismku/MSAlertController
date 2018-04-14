@@ -14,7 +14,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view, typically from a nib.
+        for family in UIFont.familyNames
+        {
+            print("\(family)")
+            for names in UIFont.fontNames(forFamilyName: family)
+            {
+                print("== \(names)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +33,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func showAlert(_ sender: Any) {
-        let vc = MSAlertController(title: "INSTAGRAM", message: "Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!!")
+        //let vc = MSAlertController(title: "INSTAGRAM", message: "Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!!")
         
          //let vc = MSAlertController(title: "INSTAGRAM", message: "Happy Coding!! Happy Coding!! Happy Coding!!")
          //let vc = MSAlertController(title: "INSTAGRAM", message: "Lets meet at Park Square!!",  preferredStyle: .MSAlertControllerStyleShowMoreList)
@@ -34,7 +43,7 @@ class ViewController: UIViewController {
         apr.titleAllignment = .centre
 
         //let vc = MSAlertController(title: "INSTAGRAM", message: "Meet me at Park Square!!", appearance: apr, sideView: UIImageView.init(image: UIImage(named: "avatar")))
-        //let vc = MSAlertController(title: "INSTAGRAM", message: "Meet me at Park Square!!",sideView: UIImageView.init(image: UIImage(named: "avatar")))
+        let vc = MSAlertController(title: "MESSAGE", message: "Hey!! Let's meet at Market-Square.",sideView: UIImageView.init(image: UIImage(named: "avatar")))
 
         
         let viewAction = MSAlertAction(title: "View") {
