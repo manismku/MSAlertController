@@ -3,7 +3,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 
-MSAlertController is a light alert controller, inspired by Apple own messaging and notfication alert.
+MSAlertController is a light alert controller which is inspired by Apple own message and notfication alert view.
 
 <img src="https://user-images.githubusercontent.com/757725/38765448-45346482-3fdf-11e8-8166-809cec40dfd3.gif" width="320" height="568"> <img src="https://user-images.githubusercontent.com/757725/38771061-d990ef74-4039-11e8-806f-6c22bdc2b35d.gif" >
 
