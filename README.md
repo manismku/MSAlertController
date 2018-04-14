@@ -10,6 +10,8 @@ MSAlertController is a light alert controller which is inspired by Apple own mes
 # Features
   - [x] Create simple alert/reminder to inform user with side-view configured
   - [x] Create actionable alert and attach action to action buttons
+  - [x] Create your own theme to change appearance
+  - [x] Change font for title and body
 
 And of course MSAlertController itself is open source.
 
