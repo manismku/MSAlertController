@@ -10,7 +10,7 @@ import Foundation
 
 class MSAlertActionSheet: UIView {
     
-    var actions: [MSAlertAction]?
+    var actions: [(MSAlertAction)]?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -82,8 +82,9 @@ extension MSAlertActionSheet {
     }
     
     @objc func actionHandler(sender: UIButton) {
-        if let actionable = actions, let handle = actionable[sender.tag].handler {
-               handle()
+        if let actionable = actions {
+               let action = actionable[sender.tag]
+               action.perform()
         }
     }
 }

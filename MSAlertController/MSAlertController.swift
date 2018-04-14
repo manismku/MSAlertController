@@ -317,6 +317,7 @@ extension CustomPresentationControllerDelegate: UIViewControllerTransitioningDel
 public extension MSAlertController {
     public func addAction(action: MSAlertAction) {
         if actions.count < 3 &&  preferredStyle == .Default {
+            action.vc = self
             actions.append(action)
         }
     }

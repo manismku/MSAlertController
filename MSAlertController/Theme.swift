@@ -60,12 +60,12 @@ public struct Appearance {
         var theme =  Appearance()
         theme.bgColor = UIColor(red: 250/255, green: 250/255, blue: 254/255, alpha: 0.75)
         theme.headerBgColor = UIColor(red: 217/255, green: 217/255, blue: 217/255, alpha: 1)
-        theme.titleColor = UIColor(red: 26/255, green: 26/255, blue: 27/255, alpha: 1)
+        theme.titleColor = UIColor(red: 65/255, green: 69/255, blue: 80/255, alpha: 1)
         theme.bodyTextColor = UIColor(red: 9/255, green: 10/255, blue: 10/255, alpha: 1)
         theme.sideViewBgColor = UIColor(red: 250/255, green: 250/255, blue: 254/255, alpha: 0.75)
         theme.windowHeight = 120
         theme.bodyFont = UIFont.sanFranciscoText(style: .medium, size: 14)
-        theme.titleFont = UIFont.sanFranciscoText(style: .bold, size: 12)
+        theme.titleFont = UIFont.sanFranciscoText(style: .bold, size: 16)
         theme.sideViewLabelFont = UIFont.sanFranciscoText(style: .medium, size: 20)
         return theme
     }

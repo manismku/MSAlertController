@@ -9,7 +9,7 @@
 import UIKit
 import MSAlertController
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
     override func viewDidLoad() {
@@ -38,31 +38,37 @@ class ViewController: UIViewController {
          //let vc = MSAlertController(title: "INSTAGRAM", message: "Happy Coding!! Happy Coding!! Happy Coding!!")
          //let vc = MSAlertController(title: "INSTAGRAM", message: "Lets meet at Park Square!!",  preferredStyle: .MSAlertControllerStyleShowMoreList)
 
-        
         var apr = Appearance.createTheme(theme: .grey)
         apr.titleAllignment = .centre
 
-        //let vc = MSAlertController(title: "INSTAGRAM", message: "Meet me at Park Square!!", appearance: apr, sideView: UIImageView.init(image: UIImage(named: "avatar")))
-        let vc = MSAlertController(title: "MESSAGE", message: "Hey!! Let's meet at Market-Square.",sideView: UIImageView.init(image: UIImage(named: "avatar")))
+        let vc = MSAlertController(title: "NEARME", message: "You are near Fisherman's Wharf.", appearance: apr)
 
-        
-        let viewAction = MSAlertAction(title: "View") {
+        //let vc = MSAlertController(title: "MESSAGE", message: "Hey!! Let's meet at Market-Square.",sideView: UIImageView.init(image: UIImage(named: "avatar")))
+
+        let viewAction = MSAlertAction(title: "Open Map") {
             self.dismiss(animated: true, completion: nil)
         }
-        
-        let settingAction = MSAlertAction(title: "Settings") {
-            self.dismiss(animated: true, completion: nil)
+
+        let cameraAction = MSAlertAction(title: "Take Photo") {
+            [weak self] in            
+            self?.actionLaunchCamera()
         }
-        
-        let cancelAction = MSAlertAction(title: "Cancel") {
-            self.dismiss(animated: true, completion: nil)
-        }
-        
         vc.addAction(action: viewAction)
-        vc.addAction(action: settingAction)
-        vc.addAction(action: cancelAction)
+        vc.addAction(action: cameraAction)
         self.present(vc, animated: false, completion: nil)
     }
-    
+
+    func actionLaunchCamera()
+    {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
+        {
+            let imagePicker:UIImagePickerController = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+            imagePicker.allowsEditing = true
+
+            self.present(imagePicker, animated: false, completion: nil)
+        }
+    }
 }
 
