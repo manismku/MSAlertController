@@ -22,7 +22,6 @@ And of course MSAlertController itself is open source.
 - Swift 4.0+
 
 ## Installation
-#### Carthage
 ### Carthage
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
