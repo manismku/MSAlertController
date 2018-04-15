@@ -54,10 +54,61 @@ Run `carthage update` to build the framework and drag the built `MSAlertControll
 1. Download and drop ```/Library``` folder in your project.  
 2. Congratulations!
 
+## Usage
+----------------
+The usage is very similar to `UIAlertController`.
+`MSAlertController` has currently two styles: Default & NoAction.
+
+**Default:** with this style, alert view gives upto 3 action to submit when user side(left) scrolls
+
+**NoAction:** with Noaction, in this mode it will act as simple informative alert and side view can hold extra information 
+
+#### Show a simple default alert with two action associated
+
+```swift
+        let alertVC = MSAlertController(title: "NEARME", message: "You are near Fisherman's Wharf.")
+        let viewAction = MSAlertAction(title: "Open Map") {
+            [weak self] in
+            self?.dismiss(animated: true, completion: nil)
+        }
+        let cameraAction = MSAlertAction(title: "Take Photo") {
+            [weak self] in            
+            self?.actionLaunchCamera()
+        }
+        alertVC.addAction(action: viewAction)
+        alertVC.addAction(action: cameraAction)
+        self.present(alertVC, animated: false, completion: nil)
+```
+#### Show alert with custom style
+```swift
+         let alertVC = MSAlertController(title: "NEARME", message: "You are near Fisherman's Wharf.", 
+                                         theme: { () -> Appearance in
+                                                  let theme = Appearance.createTheme(theme: .grey)
+                                                  return theme 
+                                          })
+        let viewAction = MSAlertAction(title: "Open Map") {
+            [weak self] in
+            self?.dismiss(animated: true, completion: nil)
+        }
+        let cameraAction = MSAlertAction(title: "Take Photo") {
+            [weak self] in            
+            self?.actionLaunchCamera()
+        }
+        alertVC.addAction(action: viewAction)
+        alertVC.addAction(action: cameraAction)
+        self.present(alertVC, animated: false, completion: nil)
+```
+#### Show a NoAction alert with side view as an image
+```swift
+        let alertVC = MSAlertController(title: "MESSAGE", message: "Hey!! Let's meet at Market-Square.",
+                                        sideView: UIImageView.init(image: UIImage(named: "avatar")), 
+                                        style: .NoAction)
+        self.present(alertVC, animated: false, completion: nil)
+```
 ### Todos
 
- - More style
- - Add themes
+ - More styles
+ - More themes
 
 ## Contributing
 
