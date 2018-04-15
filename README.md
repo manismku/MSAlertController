@@ -9,15 +9,23 @@ MSAlertController is a light alert controller which is inspired by Apple own mes
 
 # Features
   - [x] Create simple alert/reminder to inform user with side-view configured
-  - [x] Create actionable alert and attach action to action buttons
-  - [x] Create your own theme to change appearance
-  - [x] Change font for title and body
+  - [x] Use side view as second view for extra information
+  - [x] Add your own view inside side view (see API)
+  - [x] Create actionable alert and attach closure based action buttons
+  - [x] Attach upto three buttons in action sheet for action
+  - [x] Title
+  - [x] Description message
+  - [x] Customizations: Create your own theme - title font, title font color, body font & color - to change appearance
+  - [x] UIKit interactive animation
+  - [x] Carthage
+ 
+  
 
 And of course MSAlertController itself is open source.
 
 ## Requirements
 
-- iOS 8.0+
+- iOS 9.0+
 - Xcode 9+
 - Swift 4.0+
 
@@ -40,18 +48,30 @@ github "manismku/MSAlertController" ~> 1.0
 ```
 
 Run `carthage update` to build the framework and drag the built `MSAlertController.framework` into your Xcode project.
-### Development
 
-Want to contribute? Great!
+## Manually
+----------------
+1. Download and drop ```/Library``` folder in your project.  
+2. Congratulations!
 
 ### Todos
 
  - More style
  - Add themes
 
-## License
+## Contributing
 
-MSAlertController is released under the MIT license. [See LICENSE]() for details.
+- If you **need help** or you'd like to **ask a general question**, open an issue.
+- If you **found a bug**, open an issue.
+- If you **have a feature request**, open an issue.
+- If you **want to contribute**, submit a pull request.
 
-**Free Software, Hell Yeah!**
+## Acknowledgements
+Made with ❤️ by [Manish Kumar](https://medium.com/@manismku)
+The design is inspired by Apple own message and notfication.
+
+## MIT License
+----------------
+MSAlertController is available under the MIT license. See the LICENSE file for more info.
+
 
