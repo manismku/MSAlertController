@@ -33,29 +33,26 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
 
     @IBAction func showAlert(_ sender: Any) {
-        //let vc = MSAlertController(title: "INSTAGRAM", message: "Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!! Happy Coding!!")
-        
-         //let vc = MSAlertController(title: "INSTAGRAM", message: "Happy Coding!! Happy Coding!! Happy Coding!!")
-         //let vc = MSAlertController(title: "INSTAGRAM", message: "Lets meet at Park Square!!",  preferredStyle: .MSAlertControllerStyleShowMoreList)
 
-        var apr = Appearance.createTheme(theme: .grey)
-        apr.titleAllignment = .centre
+        let alertVC = MSAlertController(title: "NEARME", message: "You are near Fisherman's Wharf.", theme: { () -> Appearance in
+            let theme = Appearance.createTheme(theme: .grey)
+            return theme
+        })
 
-        let vc = MSAlertController(title: "NEARME", message: "You are near Fisherman's Wharf.", appearance: apr)
-
-        //let vc = MSAlertController(title: "MESSAGE", message: "Hey!! Let's meet at Market-Square.",sideView: UIImageView.init(image: UIImage(named: "avatar")))
-
+        /*
+        let alertVC = MSAlertController(title: "MESSAGE", message: "Hey!! Let's meet at Market-Square.",
+                                        sideView: UIImageView.init(image: UIImage(named: "avatar")), style: .NoAction)
+        */
         let viewAction = MSAlertAction(title: "Open Map") {
             self.dismiss(animated: true, completion: nil)
         }
-
         let cameraAction = MSAlertAction(title: "Take Photo") {
             [weak self] in            
             self?.actionLaunchCamera()
         }
-        vc.addAction(action: viewAction)
-        vc.addAction(action: cameraAction)
-        self.present(vc, animated: false, completion: nil)
+        alertVC.addAction(action: viewAction)
+        alertVC.addAction(action: cameraAction)
+
     }
 
     func actionLaunchCamera()
