@@ -52,10 +52,6 @@ class MSAlertAnimator {
         self.finalState = final
     }
     
-    deinit {
-        print("MSAlertAnimator object is deleted")
-    }
-
     //MARK:- Animation Intelligence
     func setAnimation(to state: State) {
         guard self.animators.isEmpty else {

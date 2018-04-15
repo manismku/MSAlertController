@@ -50,9 +50,6 @@ class MSAlertPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioni
         self.animation = presentationAnimation
         super.init()
     }
-    deinit {
-        print("MSAlertPresentationAnimator object is deleted")
-    }
     
     // MARK: - UIViewControllerAnimatedTransitioning Protocol
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {

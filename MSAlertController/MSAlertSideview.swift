@@ -17,7 +17,6 @@ class MSAlertSideview: UIView {
         self.alpha = 0
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
-
         if view is UILabel { // refactor to style
             view.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
             view.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
@@ -27,7 +26,6 @@ class MSAlertSideview: UIView {
             view.topAnchor.constraint(equalTo: topAnchor).isActive = true
             view.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         }
-
         self.commontInit()
     }
     

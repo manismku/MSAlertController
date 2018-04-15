@@ -9,11 +9,11 @@
 import Foundation
 
 public class MSAlertAction: NSObject {
-    var title: String?
+    var title: String
     var handler: (() -> Void)?
     weak var vc: UIViewController?
     
-    public init(title: String? = nil, handler: (() -> Void)? = nil) {
+    public init(title: String = "Ok", handler: (() -> Void)?) {
         self.title = title
         self.handler = handler
     }

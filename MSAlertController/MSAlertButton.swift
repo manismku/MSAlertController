@@ -19,11 +19,7 @@ class MSAlertButton: UIButton {
         super.init(coder: aDecoder)
         commontInit()
     }
-    
-    deinit {
-        print("MSAlertButton is deleted")
-    }
-    
+
     func commontInit() {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = UIColor.clear

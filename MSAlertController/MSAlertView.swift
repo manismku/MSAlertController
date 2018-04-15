@@ -9,9 +9,10 @@
 import UIKit
 
 class MSAlertView: UIView {
-    var title: String
-    var theme: Appearance
-    var style: MSAlertControllerStyle
+    var message: String
+    var appearance: Appearance
+    var style: MSAlertStyle
+
     lazy var headerView: UIView = {
         let view  = UIView(frame: CGRect.zero)
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -52,37 +53,36 @@ class MSAlertView: UIView {
         return txtView
     }()
     
-    init(frame: CGRect, title: String, appearance: Appearance, preferredStyle: MSAlertControllerStyle) {
-        self.title = title
-        self.theme = appearance
+    init(frame: CGRect, title: String, theme: Appearance, preferredStyle: MSAlertStyle) {
+        self.message = title
+        self.appearance = theme
         self.style = preferredStyle
         super.init(frame: frame)
         commontInit()
-        textBody.font = appearance.bodyFont
+        textBody.font = theme.bodyFont
         textBody.text = title
-        headerView.backgroundColor = appearance.headerBgColor
-        headerTitle.font = appearance.titleFont
-        headerTitle.textColor = appearance.titleColor
-        backgroundColor = appearance.bgColor
+        headerView.backgroundColor = theme.headerBgColor
+        headerTitle.font = theme.titleFont
+        headerTitle.textColor = theme.titleColor
+        backgroundColor = theme.bgColor
 
     }
-    
-    deinit {
-        print("Alertview  deleted")
-    }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     func commontInit() {
         translatesAutoresizingMaskIntoConstraints = false
-        headerTitle.text = title.uppercased()
+        headerTitle.text = message.uppercased()
         layer.roundCorners(radius: 10)
         layer.masksToBounds = true
-        layout()
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layout()
+    }
 
     func layout() {
         
@@ -90,9 +90,9 @@ class MSAlertView: UIView {
         
         headerView.addSubview(headerTitle)
         headerTitle.centerYAnchor.constraint(equalTo: headerView.centerYAnchor, constant: 0).isActive = true
-        if theme.titleAllignment == .left {
+        if appearance.titleAllignment == .left {
             headerTitle.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 15).isActive = true
-        } else if theme.titleAllignment == .centre {
+        } else if appearance.titleAllignment == .centre {
             headerTitle.centerXAnchor.constraint(equalTo: headerView.centerXAnchor, constant: 0).isActive = true
         }
         
@@ -118,5 +118,4 @@ class MSAlertView: UIView {
             textIndicator.centerYAnchor.constraint(equalTo: headerView.centerYAnchor, constant: 0).isActive = true
         }
     }
-    
 }

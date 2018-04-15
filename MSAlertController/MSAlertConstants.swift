@@ -10,6 +10,12 @@ import Foundation
 
 typealias AnimationBlock = () -> Void
 
+public enum MSAlertStyle {
+    case Default
+    case NoAction
+    case List
+}
+
 struct Constants {
      struct Device {
         static var DeviceHeight: CGFloat {

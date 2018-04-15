@@ -1,5 +1,5 @@
 //
-//  Theme.swift
+//  Appearance.swift
 //  MSAlertController
 //
 //  Created by manish kumar on 13/04/18.
@@ -17,14 +17,14 @@ public struct Appearance {
     public var windowHeight: CGFloat
     public var bodyFont: UIFont?
     public var titleFont: UIFont?
-    public var titleAllignment: TitleAlignmnet
+    public var titleAllignment: TitleAlignment
 
     public enum Theme {
         case light
         case grey
     }
 
-    public enum TitleAlignmnet {
+    public enum TitleAlignment {
         case left
         case centre
     }
@@ -70,7 +70,7 @@ public struct Appearance {
         return theme
     }
 
-    // theme factory
+    // Apperance factory
     public static func createTheme(theme: Theme) -> Appearance {
         var appearance: Appearance!
         switch theme {
