@@ -16,18 +16,15 @@ class MSAlertActionSheet: UIView {
         super.init(frame: frame)
         commontInit()
     }
-    init(frame: CGRect, actions: [MSAlertAction]? = nil) {
+
+    init(frame: CGRect, actions: [MSAlertAction]?) {
         super.init(frame: frame)
         self.actions = actions
         commontInit()
     }
-    
-    deinit {
-        print("MSAlertActionSheet is deleted")
-    }
+
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        commontInit()
+        fatalError("init(coder:) has not been implemented")
     }
     
     func commontInit() {
@@ -35,8 +32,13 @@ class MSAlertActionSheet: UIView {
         backgroundColor = UIColor(red: 154/255, green: 154/255, blue: 154/255, alpha: 0.75)
         layer.roundCorners(radius: 10)
         layer.masksToBounds = true
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
         addButtons()
     }
+
 }
 
 // MARK:- Add Buttons
@@ -54,7 +56,6 @@ extension MSAlertActionSheet {
     }
     
     func layout(button: UIButton, position: CGFloat) {
-        
         let margins = layoutMarginsGuide
         var line: UILabel?
         if position == 1 || position == 2 {

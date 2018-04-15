@@ -9,14 +9,21 @@
 import UIKit
 import UIKit.UIGestureRecognizerSubclass
 
-enum MSAlertControllerStyle {
-    case Default
-    case SideImage
-}
 public class MSAlertController: UIViewController {
 
-    var appearance: Appearance?
-    private var preferredStyle: MSAlertControllerStyle = .Default
+    private static var topLevelStackView: UIStackView = {
+        let stview = UIStackView(frame: CGRect.zero)
+        stview.axis = UILayoutConstraintAxis.vertical
+        stview.alignment = UIStackViewAlignment.fill
+        stview.distribution = UIStackViewDistribution.fillEqually
+        stview.spacing = 10
+        stview.translatesAutoresizingMaskIntoConstraints = false
+        return stview
+    }()
+
+    // Begin
+    var appearance: Appearance
+    var preferredStyle: MSAlertStyle = .Default
     var actionSheet: ActionSheetState = .closed
     var dynAnimator: UIDynamicAnimator!
 
@@ -48,8 +55,6 @@ public class MSAlertController: UIViewController {
     }()
     private var actions = [MSAlertAction]()
     private var animatorObj: MSAlertAnimator?
-    
-    private var style: MSAlertControllerStyle = .Default
     private let screen = UIScreen.main.bounds
     private var maxdx: CGFloat = Constants.Device.DeviceWidth
     // Constraints
@@ -66,20 +71,18 @@ public class MSAlertController: UIViewController {
         let distance = sqrt(dx*dx + dy*dy)
         return distance
     }
-    public init(title: String, message: String, appearance: Appearance = Appearance(), sideView: UIView = {let label = UILabel(frame: CGRect.zero)
+    public init(title: String, message: String, theme: @escaping (() -> Appearance) = {return Appearance()}, sideView: UIView = {let label = UILabel(frame: CGRect.zero)
         label.text = "View"
         label.font = UIFont(name: "SanFranciscoText-Medium", size: 20)
-        return label}()) {
+        return label}(), style: MSAlertStyle = .Default) {
         self.message = message
-        self.appearance = appearance
+        self.appearance = theme()
+        self.preferredStyle = style
         super.init(nibName: nil, bundle: nil)
         animatorObj = MSAlertAnimator(state: closeAlertView(), final: openAlertView())
         addPresentationDelegate()
-        alertView = MSAlertView(frame: CGRect.zero, title: title, appearance: appearance, preferredStyle: self.style)
-        alertView.textBody.text = message
-        if sideView is UIImageView {
-            preferredStyle = .SideImage
-        }
+        alertView = MSAlertView(frame: CGRect.zero, title: title, theme: appearance , preferredStyle: style)
+        alertView.textBody.text = message        
         self.sideView = MSAlertSideview(frame: CGRect.zero, theme: appearance, view: sideView)
     }
 
@@ -136,7 +139,7 @@ public class MSAlertController: UIViewController {
         right.isActive = true
         top = alertView.topAnchor.constraint(equalTo: margins.topAnchor, constant: Constants.Layout.AlertViewTop)
         top.isActive = true
-        let textHeight = self.message.height(withConstrainedWidth: 100, font: (appearance?.bodyFont)!) + alertView.lblBottomHeight + 10
+        let textHeight = self.message.height(withConstrainedWidth: 100, font: (appearance.bodyFont)!) + alertView.lblBottomHeight + 10
 
         if Int(textHeight) > 200 {
             height = alertView.heightAnchor.constraint(equalToConstant: 200)
@@ -191,9 +194,6 @@ public class MSAlertController: UIViewController {
     @objc func dismissView(sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-    deinit {
-        print("Alertview controller deleted")
-    }
 }
 
 // MARK: - InstantPanGestureRecognizer
@@ -205,34 +205,7 @@ class InstantPanGestureRecognizer: UIPanGestureRecognizer {
     }
 }
 
-class InstantSwipeGestureRecognizer: UISwipeGestureRecognizer {
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
-        if (self.state == UIGestureRecognizerState.began) { return }
-        super.touchesBegan(touches, with: event)
-        self.state = UIGestureRecognizerState.began
-    }
-}
-
-typealias HandleSwipeGesture = MSAlertController
-extension HandleSwipeGesture {
-    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
-                                  shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        // Do not begin the pan until the swipe fails.
-        if gestureRecognizer is UIPanGestureRecognizer &&
-            otherGestureRecognizer is UISwipeGestureRecognizer {
-            print("swipe failed")
-            return true
-        }
-        return false
-    }
-    @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
-        if sender.direction == .left {
-            print("left swipe")
-        }
-    }
-}
-
-// MARK: Tap
+// MARK: - Tap
 typealias HandleTapGesture = MSAlertController
 extension HandleTapGesture {
     @objc func handleSideTap(sender: UIPanGestureRecognizer) {
@@ -250,7 +223,7 @@ extension HandleTapGesture {
     }
 }
 
-// MARK: Pan
+// MARK: - Pan
 typealias HandlePanGesture = MSAlertController
 extension HandlePanGesture: UIGestureRecognizerDelegate {
     @objc func handlePan(sender: UIPanGestureRecognizer) {
