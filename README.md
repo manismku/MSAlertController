@@ -72,6 +72,6 @@ The design is inspired by Apple own message and notfication.
 
 ## MIT License
 ----------------
-MSAlertController is available under the MIT license. See the LICENSE file for more info.
+MSAlertController is available under the MIT license. See the [LICENSE](https://github.com/manismku/MSAlertController/blob/master/LICENSE) file for more info.
 
 
